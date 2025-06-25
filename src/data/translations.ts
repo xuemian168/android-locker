@@ -118,7 +118,7 @@ export const translations: Record<Language, Translations> = {
     
     seo: {
       title: 'BL List',
-      description: '各大手机厂商的Bootloader解锁、内核开源、保修政策对比',
+      description: '各大手机厂商的Bootloader解锁、内核开源、保修政策对比。刷机有风险，刷机请注意备份数据。',
       keywords: 'Android, Bootloader, Unlock, Kernel, Warranty, Manufacturer, Comparison',
       ogImage: 'https://a.zli.li/og-image.png',
       twitterCard: 'summary_large_image',
@@ -126,7 +126,7 @@ export const translations: Record<Language, Translations> = {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Android Manufacturer Bootloader Unlock Status",
-        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers.",
+        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers. 刷机有风险，刷机请注意备份数据。",
         "url": "https://a.zli.li/"
       }
     }
@@ -182,7 +182,7 @@ export const translations: Record<Language, Translations> = {
     
     seo: {
       title: 'BL List',
-      description: 'Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers.',
+      description: 'Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers. Flashing is risky. Please back up your data before proceeding.',
       keywords: 'Android, Bootloader, Unlock, Kernel, Warranty, Manufacturer, Comparison',
       ogImage: 'https://a.zli.li/og-image.png',
       twitterCard: 'summary_large_image',
@@ -190,7 +190,7 @@ export const translations: Record<Language, Translations> = {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "BL List",
-        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers.",
+        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers. Flashing is risky. Please back up your data before proceeding.",
         "url": "https://a.zli.li/"
       }
     }
@@ -246,7 +246,7 @@ export const translations: Record<Language, Translations> = {
     
     seo: {
       title: 'BL List',
-      description: 'निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना',
+      description: 'निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना। फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें',
       keywords: 'एंड्राइड, बूटलोडर, अनलॉक, कर्नेल, वारंटी, निर्माता, तुलना',
       ogImage: 'https://a.zli.li/og-image.png',
       twitterCard: 'summary_large_image',
@@ -254,7 +254,7 @@ export const translations: Record<Language, Translations> = {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "BL List",
-        "description": "निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना",
+        "description": "निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना। फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें",
         "url": "https://a.zli.li/"
       }
     }

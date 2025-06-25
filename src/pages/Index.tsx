@@ -43,9 +43,12 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <meta name="keywords" content={seo.keywords} />
-        <meta property="og:title" content={seo.title} />
-        <meta property="og:description" content={seo.description} />
+        <meta property="og:title" content={seo.title + ' - Bootloader Unlock Status'} />
+        <meta property="og:description" content={seo.description + (t.announcement ? ' ' + t.announcement : '')} />
         {seo.ogImage && <meta property="og:image" content={seo.ogImage} />}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.origin + (currentLanguage !== 'zh' ? '/' + currentLanguage + '/' : '/')} />
+        <meta name="wechat-card" content="summary_large_image" />
         <meta name="twitter:card" content={seo.twitterCard || 'summary'} />
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
