@@ -158,14 +158,14 @@ export const manufacturersData: ManufacturerData[] = [
       hi: 'अगर'
     },
     unlockQuota: {
-      zh: '',
-      en: '',
-      hi: ''
+      zh: '无',
+      en: 'None',
+      hi: 'कोई नहीं'
     },
     notes: {
-      zh: '',
-      en: '',
-      hi: ''
+      zh: '启用 OEM 解锁功能需已连接到互联网并已签入 Google（即便设备不久前曾连接到互联网，也仍然可能没有签入 Google）。如需强制签入，请在拨号器中输入 *#*#2432546#*#* \n 美国 Verizon 版本 Pixel 均不支持 OEM 解锁',
+      en: 'OEM unlock requires being connected to the internet and signed in to Google (even if the device was recently connected to the internet, it may still not be signed in to Google). To force sign in, enter *#*#2432546#*#* in the dialer. \n US Verizon Pixel models do not support OEM unlock',
+      hi: 'OEM अनलॉक के लिए इंटरनेट से कनेक्ट होना और जीएन में साइन इन करना आवश्यक है (भले ही उपकरण कुछ समय पहले इंटरनेट से कनेक्ट हो चुका हो, यह जीएन में साइन इन नहीं हो सकता हो)। साइन इन करने के लिए डायलर में *#*#2432546#*#* दर्ज करें। \n US Verizon Pixel मॉडल समर्थित नहीं'
     },
     lastUpdated: '2025-06-25',
     officialPolicy: 'https://developers.google.com/android',
