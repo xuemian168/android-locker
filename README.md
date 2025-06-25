@@ -1,0 +1,3 @@
+References
+1. [https://github.com/KHwang9883/MobileModels/blob/afa441e496b64f7c918926bfe5d6acf9c1c3296a/misc/bootloader-kernel-source.md](https://github.com/KHwang9883/MobileModels/blob/afa441e496b64f7c918926bfe5d6acf9c1c3296a/misc/bootloader-kernel-source.md)
+2. [https://source.android.com/docs/security/features/verifiedboot/device-state#user-settable-root-of-trust](https://source.android.com/docs/security/features/verifiedboot/device-state#user-settable-root-of-trust)
