@@ -382,9 +382,48 @@ export const manufacturersData: ManufacturerData[] = [
       {
         "url": "https://github.com/asus-development",
         "label": "Asus Development on GitHub"
+      },
+      {
+        "url": "https://xdaforums.com/t/universal-asus-guide-unlock-the-bootloader-of-any-asus-device.3567280/",
+        "label": "XDA Forums"
       }
     ]
   },
+  {
+    id: "Nothing",
+    name: "Nothing",
+    logo: "/logos/nothing.png",
+    bootloaderUnlock: "supported",
+    kernelSource: "open",
+    warrantyAfterUnlock: "maintained",
+    unlockMethod: {
+      zh: "无需解锁码",
+      en: "No unlock code required",
+      hi: "अनलॉक कोड की आवश्यकता नहीं"
+    },
+    notes: {
+      zh: "解锁后会暂时屏蔽 TEE，回锁后恢复（解锁后的 TEE 功能可使用 OPPO/OnePlus/Realme 的方法修复）",
+      en: "TEE will be temporarily disabled after unlock, restored after relock (TEE function can be repaired using OPPO/OnePlus/Realme methods)",
+      hi: "अनलॉक के बाद TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है, वापसी के बाद पुनर्स्थापित हो जाता है (अनलॉक के बाद TEE कार्य को OPPO/OnePlus/Realme के तरीकों का उपयोग करके विभाजित किया जा सकता है)"
+    },
+    lastUpdated: "2025-06-25",
+    officialPolicy: "https://nothing.tech/pages/glyph-developer-kit",
+    references: [
+      {
+        "url": "https://nothing.community/d/6047-policies-for-rootingunlocking-boot-loader",
+        "label": "Nothing Community - Bootloader Unlock Policies"
+      },
+      {
+        "url": "https://github.com/NothingOSS",
+        "label": "NothingOSS GitHub Repository"
+      },
+      {
+        "url": "https://www.xda-developers.com/nothing-phone-1-kernel-source-code/",
+        "label": "XDA Developers - Nothing Phone 1 Kernel Source Code"
+      }
+    ]
+  },
+  
 ]
 
 export const getStatusColor = (status: string) => {
