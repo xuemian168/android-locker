@@ -146,7 +146,7 @@ export const manufacturersData: ManufacturerData[] = [
     logo: '/logos/google.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
-    warrantyAfterUnlock: 'voided',
+    warrantyAfterUnlock: 'maintained',
     unlockMethod: {
       zh: 'Fastboot OEM 解锁',
       en: 'Fastboot OEM unlock',

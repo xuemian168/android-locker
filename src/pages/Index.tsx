@@ -119,6 +119,7 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
                   <Calendar className="h-4 w-4 mr-2" />
                   {t.lastDataUpdate}: 2025-06-25
                 </Badge>
+                
               </div>
             </div>
           </section>
@@ -157,36 +158,55 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
                   {t.aboutTitle}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  {t.aboutDescription}
-                </p>
-                
-                <div>
-                  <h4 className="font-semibold mb-2 text-android-700">
-                    {t.howToContribute}
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    {t.contributeDescription}
-                  </p>
-                </div>
-                
-                <div className="pt-4">
-                  <Button 
-                    asChild
-                    variant="outline"
-                    className="border-android-300 hover:bg-android-50"
-                  >
-                    <a 
-                      href="https://github.com/xuemian168/android-locker" 
-                      target="_blank" 
+              <CardContent>
+                <div className="flex flex-col md:flex-row gap-8 items-center">
+                  {/* 左侧原有内容 */}
+                  <div className="flex-1 space-y-4 w-full">
+                    <p className="text-muted-foreground">
+                      {t.aboutDescription}
+                    </p>
+                    <div>
+                      <h4 className="font-semibold mb-2 text-android-700">
+                        {t.howToContribute}
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        {t.contributeDescription}
+                      </p>
+                    </div>
+                    <div className="pt-4">
+                      <Button 
+                        asChild
+                        variant="outline"
+                        className="border-android-300 hover:bg-android-50"
+                      >
+                        <a 
+                          href="https://github.com/xuemian168/android-locker" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          <GitFork className="h-4 w-4" />
+                          GitHub Repository
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                  {/* 右侧二维码 */}
+                  <div className="flex-shrink-0 flex flex-col items-center justify-center w-full md:w-auto">
+                    <a
+                      href="https://buymeacoffee.com/ictrun"
+                      target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2"
+                      className="block"
                     >
-                      <GitFork className="h-4 w-4" />
-                      GitHub Repository
+                      <img
+                        src="/buymecoffee.png"
+                        alt="Buy Me a Coffee QR"
+                        className="w-40 h-40 object-contain rounded-lg border border-android-200 shadow-md bg-white"
+                      />
                     </a>
-                  </Button>
+                    <span className="mt-2 text-sm text-muted-foreground">Buy Me a Coffee</span>
+                  </div>
                 </div>
               </CardContent>
             </Card>
