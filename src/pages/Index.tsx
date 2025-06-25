@@ -20,7 +20,8 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
   const paramLang = params.lang as Language | undefined;
   const initialLang = forcedLanguage || paramLang || 'zh';
   const [currentLanguage, setCurrentLanguage] = useState<Language>(initialLang);
-  const t = { ...translations[currentLanguage], lang: currentLanguage };
+  const safeTranslations = translations[currentLanguage] || translations['zh'];
+  const t = { ...safeTranslations, lang: currentLanguage };
   const seo = t.seo || {};
   const hreflangs = [
     { lang: 'zh', url: 'https://a.zli.li/zh/' },
@@ -131,7 +132,7 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
                 {t.manufacturers}
               </h3>
               <div className="text-sm text-muted-foreground">
-                {manufacturersData.length} {t.manufacturers.toLowerCase()}
+                {manufacturersData.length} {(t.manufacturers || '').toLowerCase()}
               </div>
             </div>
             
