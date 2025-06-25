@@ -427,7 +427,52 @@ export const manufacturersData: ManufacturerData[] = [
       }
     ]
   },
-  
+  {
+    id: "MediaTek",
+    name: "MediaTek",
+    logo: "/logos/mediatek.png",
+    bootloaderUnlock: "limited",
+    kernelSource: "partial",
+    warrantyAfterUnlock: "partial",
+    unlockMethod: {
+      zh: "多位开发者成功利用奇美拉工具（Chimera Tool）通过BROM模式对搭载天玑9300芯片的Vivo和iQOO设备进行BL解锁和获取Root权限。工具如MTK_UNIVERSAL_V5和mtkclient.gui被广泛用于强制解锁联发科设备的BL锁。",
+      en: "Multiple developers have successfully used the Chimera Tool to unlock the bootloader and gain root access on Vivo and iQOO devices with MediaTek Dimensity 9300 chipsets using BROM mode. Tools like MTK_UNIVERSAL_V5 and mtkclient.gui are widely used to force unlock the BL lock of MediaTek devices.",
+      hi: "कई डेवलपर्स ने सफल रहे हैं कि वे चिमेरा टूल का उपयोग करके BROM मोड के माध्यम से मीडियाटेक डाइमेंसिटी 9300 चिपसेट वाले वीवो और आईक्यूओ डिवाइसेस के बूटलोडर को अनलॉक किया और रूट एक्सेस प्राप्त किया। टूल्स जैसे MTK_UNIVERSAL_V5 और mtkclient.gui का उपयोग मीडियाटेक डिवाइसेस के बीएल लॉक को फोर्स अनलॉक करने के लिए किया जाता है।"
+    },
+    notes: {
+      zh: "截至目前，关于天玑9400系列设备的BL解锁方法仍在研究中，尚未有公开的、广泛适用的解锁方案。由于新一代芯片可能引入了更严格的安全机制，解锁难度可能增加。建议关注相关技术社区和论坛的最新动态，以获取最新的解锁信息。", 
+      en: "As of now, there is no public, widely applicable solution for unlocking the bootloader of MediaTek Dimensity 9400 series devices. Given the introduction of more stringent security mechanisms in the new generation of chips, the difficulty of unlocking may increase. It is recommended to follow the latest developments in relevant technical communities and forums to obtain the latest information on unlocking.",
+      hi: "वर्तमान में, मीडियाटेक डाइमेंसिटी 9400 सीरीज डिवाइसेस के बूटलोडर को अनलॉक करने के लिए कोई सार्वजनिक, व्यापक रूप से लागू होने वाला समाधान नहीं है। नए पीढ़ी के चिप्स में अधिक सख्त सुरक्षा तंत्र के परिचय के कारण, अनलॉक करने की कठिनाई बढ़ सकती है। संबंधित तकनीकी समुदायों और मंचों के नवीनतम विकास का पालन करने की सलाह दी जाती है, ताकि अनलॉक करने की नवीनतम जानकारी प्राप्त की जा सके।"
+    },
+    lastUpdated: "2025-06-25",
+    officialPolicy: "https://www.mediatek.com/",
+    references: [ 
+      {
+        "url": "https://www.bilibili.com/video/BV1SGQXYKEXQ",
+        "label": "Bilibili - 联发科天玑9300 BL解锁教程"
+      },
+      {
+        "url": "https://onfix.cn/course/4650",
+        "label": "联发科MTK方案手机，保留数据强制解BL锁（BootLoader）图文教程"
+      },
+      {
+        "url": "https://zhuanlan.zhihu.com/p/609572545",
+        "label": "知乎 - 联发科通用解锁工具流程分析"
+      },
+      {
+        "url": "https://forum.gsmhosting.com/vbb/f475/chimera-major-mtk-bl-unlock-improvement-new-programmers-3368525/",
+        "label": "GSMHosting - Chimera Major MTK BL Unlock Improvement - New Programmers"
+      },
+      {
+        "url": "https://github.com/MTK-Dimensity-Tool",
+        "label": "MTK Dimensity Tool Unlock Flash And Repair MediaTek Devices [Latest Version]"
+      },
+      {
+        "url": "https://xdaforums.com/t/mtk-unlock-bootloader-without-waiting-a-week.4523431/",
+        "label": "XDA Forums - MTK Unlock Bootloader Without Waiting a Week"
+      }
+    ]
+  }
 ]
 
 export const getStatusColor = (status: string) => {

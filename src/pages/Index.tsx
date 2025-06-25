@@ -53,6 +53,10 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
         )}
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-android-50 to-white">
+        {/* 公告栏 */}
+        <div className="w-full bg-yellow-100 border-b border-yellow-300 text-yellow-900 text-center py-2 px-4 text-sm font-medium">
+          {t.announcement}
+        </div>
         {/* Header */}
         <header className="bg-white/80 backdrop-blur-md border-b border-android-200/50 sticky top-0 z-40">
           <div className="container mx-auto px-4 py-4">

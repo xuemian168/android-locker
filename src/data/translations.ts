@@ -47,6 +47,9 @@ export interface Translations {
   contributorsWelcome: string;
   lastDataUpdate: string;
   
+  // Announcement
+  announcement: string;
+  
   // About section
   aboutTitle: string;
   aboutDescription: string;
@@ -105,6 +108,8 @@ export const translations: Record<Language, Translations> = {
     communityMaintained: '社区维护项目',
     contributorsWelcome: '欢迎贡献者',
     lastDataUpdate: '数据最后更新',
+    
+    announcement: '刷机有风险，刷机请注意备份数据',
     
     aboutTitle: '关于本项目',
     aboutDescription: '这个项目旨在帮助Android用户了解不同手机厂商对于Bootloader解锁、内核开源和保修政策的态度。所有数据由社区收集和维护，欢迎大家贡献。',
@@ -168,6 +173,8 @@ export const translations: Record<Language, Translations> = {
     contributorsWelcome: 'Contributors Welcome',
     lastDataUpdate: 'Last Data Update',
     
+    announcement: 'Flashing is risky. Please back up your data before proceeding',
+    
     aboutTitle: 'About This Project',
     aboutDescription: 'This project aims to help Android users understand different manufacturers\' attitudes towards bootloader unlocking, kernel source availability, and warranty policies. All data is collected and maintained by the community.',
     howToContribute: 'How to Contribute',
@@ -229,6 +236,8 @@ export const translations: Record<Language, Translations> = {
     communityMaintained: 'समुदाय द्वारा रखरखाव',
     contributorsWelcome: 'योगदानकर्ताओं का स्वागत',
     lastDataUpdate: 'अंतिम डेटा अपडेट',
+    
+    announcement: 'फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें',
     
     aboutTitle: 'इस परियोजना के बारे में',
     aboutDescription: 'यह परियोजना एंड्राइड उपयोगकर्ताओं को विभिन्न निर्माताओं के बूटलोडर अनलॉकिंग, कर्नेल स्रोत उपलब्धता और वारंटी नीतियों के प्रति दृष्टिकोण को समझने में मदद करती है।',
