@@ -13,5 +13,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/android-unlock-hub/',
+  base: '/android-locker/',
 }));
