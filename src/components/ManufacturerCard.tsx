@@ -47,9 +47,17 @@ export const ManufacturerCard: React.FC<ManufacturerCardProps> = ({
     >
       <CardHeader className="pb-3">
         <CardTitle className="flex items-center gap-3 text-lg">
-          <span className="text-2xl" role="img" aria-label="logo">
-            {manufacturer.logo}
-          </span>
+          <img
+            src={manufacturer.logo}
+            alt={manufacturer.name + ' logo'}
+            className="w-8 h-8 object-contain rounded bg-white border border-android-100"
+            onError={e => {
+              const target = e.currentTarget;
+              // fallback: 显示 placeholder.svg
+              target.onerror = null;
+              target.src = '/placeholder.svg';
+            }}
+          />
           <span className="gradient-text font-bold">
             {manufacturer.name}
           </span>

@@ -35,7 +35,7 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'xiaomi',
     name: 'Xiaomi',
-    logo: '🔓',
+    logo: '/logos/xiaomi.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
@@ -89,10 +89,10 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'oneplus',
     name: 'OnePlus',
-    logo: '🟢',
+    logo: '/logos/oneplus.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
-    warrantyAfterUnlock: 'voided',
+    warrantyAfterUnlock: 'maintained',
     unlockMethod: {
       zh: 'Fastboot 命令',
       en: 'Fastboot command',
@@ -129,9 +129,9 @@ export const manufacturersData: ManufacturerData[] = [
       hi: 'समर्थित'
     },
     notes: {
-      zh: '无需申请解锁码，无任何解锁限制。解锁后 TEE 功能暂时屏蔽，回锁后恢复（SOTER key 除外）。一加 9 及以前支持自定义信任根，之后机型暂不支持。',
-      en: 'No unlock code required, no unlock restrictions. TEE function temporarily disabled after unlock, restored after relock (except SOTER key). OnePlus 9 and earlier models support custom trust root, while later models do not.',
-      hi: 'अनलॉक कोड की आवश्यकता नहीं, कोई अनलॉक सीमा नहीं। अनलॉक के बाद TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है, वापसी के बाद पुनर्स्थापित हो जाता है (SOTER कुंजी को छोड़कर)। एक प्लस 9 और पूर्व मॉडल स्वतंत्र विश्वास जड़ का समर्थन करते हैं, जबकि बाद के मॉडल समर्थित नहीं हैं।'
+      zh: '无需申请解锁码，无任何解锁限制。解锁后 TEE 功能暂时屏蔽，回锁后恢复（SOTER key 除外）。一加 9 及以前支持自定义信任根，之后机型暂不支持。\n 手机产品获取 ROOT 后，若刷机（官网下载升级工具自行刷机或官方服务中心免费协助刷机）后可恢复系统则享有正常的三包服务；刷机不可以恢复则只享有保修服务，不适用退换机服务。',
+      en: 'No unlock code required, no unlock restrictions. TEE function temporarily disabled after unlock, restored after relock (except SOTER key). OnePlus 9 and earlier models support custom trust root, while later models do not. \n After obtaining ROOT, if the phone can be restored after flashing (download the upgrade tool from the official website and flash it yourself or ask the official service center to help you), you can enjoy normal warranty service; if the phone cannot be restored after flashing, you can only enjoy warranty service, not return and exchange service.',
+      hi: 'अनलॉक कोड की आवश्यकता नहीं, कोई अनलॉक सीमा नहीं। अनलॉक के बाद TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है, वापसी के बाद पुनर्स्थापित हो जाता है (SOTER कुंजी को छोड़कर)। एक प्लस 9 और पूर्व मॉडल स्वतंत्र विश्वास जड़ का समर्थन करते हैं, जबकि बाद के मॉडल समर्थित नहीं हैं। \n फोन उपयोगकर्ता को अनलॉक करने के बाद यदि फ़ोन को फ़्लश करके फिर से प्रणाली को पुनर्स्थापित किया जा सकता है (ऑफिसियल वेबसाइट से अपग्रेड टूल डाउनलोड करें और आप स्वयं फ़्लश करें या ऑफिसि यल सेवा केंद्र से मदद लें), तो सामान्य वारंटी सेवा का आनंद ले सकते हैं; यदि फ़्लश करने के बाद फ़ोन को पुनर्स्थापित नहीं किया जा सकता है, तो केवल वारंटी सेवा का आनंद ले सकते हैं, वापसी और विनिमय सेवा लागू नहीं होती।'
     },
     lastUpdated: '2025-06-25',
     officialPolicy: 'https://www.oneplus.com/support',
@@ -143,7 +143,7 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'google',
     name: 'Google Pixel',
-    logo: '✅',
+    logo: '/logos/google.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
@@ -176,7 +176,7 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'samsung',
     name: 'Samsung',
-    logo: '🔒',
+    logo: '/logos/samsung.png',
     bootloaderUnlock: 'limited',
     kernelSource: 'partial',
     warrantyAfterUnlock: 'voided',
@@ -198,7 +198,7 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'huawei',
     name: 'Huawei',
-    logo: '❌',
+    logo: '/logos/huawei.png',
     bootloaderUnlock: 'unsupported',
     kernelSource: 'partial',
     warrantyAfterUnlock: 'voided',
@@ -221,18 +221,18 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'oppo',
     name: 'OPPO',
-    logo: '🔸',
+    logo: '/logos/oppo.png',
     bootloaderUnlock: 'limited',
     kernelSource: 'partial',
     warrantyAfterUnlock: 'voided',
-    unlockMethod: { zh: '深度测试申请', en: 'Deep testing application', hi: '' },
-    unlockWaitTime: { zh: '720 小时（1 个月）', en: '720 hours (1 month)', hi: '' },
-    unlockQuota: { zh: '部分机型每月限额', en: 'Monthly quota for some models', hi: '' },
-    simCardRequirement: { zh: '需要', en: 'Required', hi: '' },
-    accountLimit: { zh: '需欢太账号，部分机型支持', en: 'Oppo account required, some models supported', hi: '' },
-    regionLimit: { zh: '仅部分地区/机型', en: 'Only some regions/models', hi: '' },
-    relockSupport: { zh: '支持', en: 'Supported', hi: '' },
-    notes: { zh: '需登录欢太账号申请深度测试，解锁后 TEE 功能暂时屏蔽，回锁后恢复（SOTER key 除外）。ROOT 后如能刷回官方系统则保修正常，否则仅保修不退换。', en: 'Deep testing application required with Oppo account. TEE temporarily disabled after unlock, restored after relock (except SOTER key). If rooted and flashed back to official system, warranty is normal, otherwise only repair, no return.', hi: '' },
+    unlockMethod: { zh: '深度测试申请', en: 'Deep testing application', hi: 'गहरा जांच आवेदन' },
+    unlockWaitTime: { zh: '720 小时（1 个月）', en: '720 hours (1 month)', hi: '720 घंटे (1 महीना)' },
+    unlockQuota: { zh: '部分机型每月限额', en: 'Monthly quota for some models', hi: 'कुछ मॉडल के लिए मासिक क्षमता' },
+    simCardRequirement: { zh: '需要', en: 'Required', hi: 'आवश्यक' },
+    accountLimit: { zh: '需欢太账号，部分机型支持', en: 'Oppo account required, some models supported', hi: 'ओप्पो खाता आवश्यक, कुछ मॉडल समर्थित' },
+    regionLimit: { zh: '仅部分地区/机型', en: 'Only some regions/models', hi: 'केवल कुछ क्षेत्र/मॉडल' },
+    relockSupport: { zh: '支持', en: 'Supported', hi: 'समर्थित' },
+    notes: { zh: '需登录欢太账号申请深度测试，解锁后 TEE 功能暂时屏蔽，回锁后恢复（SOTER key 除外）。ROOT 后如能刷回官方系统则保修正常，否则仅保修不退换。', en: 'Deep testing application required with Oppo account. TEE temporarily disabled after unlock, restored after relock (except SOTER key). If rooted and flashed back to official system, warranty is normal, otherwise only repair, no return.', hi: 'ओप्पो खाता के साथ गहरा जांच आवेदन आवश्यक, अनलॉक के बाद TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है, वापसी के बाद पुनर्स्थापित हो जाता है (SOTER कुंजी को छोड़कर)। रूट के बाद यदि फ़्लश करके फिर से आधिकारिक सिस्टम में फ़्लश किया जा सकता है, तो वारंटी सामान्य है, अन्यथा केवल रिपेयर, वापसी और विनिमय सेवा लागू नहीं होती।' },
     lastUpdated: '2025-06-25',
     officialPolicy: 'https://www.oppo.com/en/',
     references: [
@@ -242,18 +242,14 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'vivo',
     name: 'Vivo',
-    logo: '🔹',
+    logo: '/logos/vivo.png',
     bootloaderUnlock: 'limited',
     kernelSource: 'partial',
     warrantyAfterUnlock: 'voided',
-    unlockMethod: { zh: '开发者计划（极少数机型）', en: 'Developer program (very few models)', hi: '' },
-    unlockWaitTime: { zh: '', en: '', hi: '' },
-    unlockQuota: { zh: '', en: '', hi: '' },
-    simCardRequirement: { zh: '', en: '', hi: '' },
-    accountLimit: { zh: '', en: '', hi: '' },
-    regionLimit: { zh: '极少数机型支持', en: 'Very few models supported', hi: '' },
-    relockSupport: { zh: '不支持', en: 'Not supported', hi: '' },
-    notes: { zh: '官方未提供解锁，极少数机型可通过特殊渠道申请。大部分机型未开源或源码不全。', en: 'No official unlock, very few models can apply via special channels. Most models not open source or incomplete.', hi: '' },
+    unlockMethod: { zh: '开发者计划（极少数机型）', en: 'Developer program (very few models)', hi: 'डेवलपर प्रोग्राम (बहुत कम मॉडल)' },
+    regionLimit: { zh: '极少数机型支持', en: 'Very few models supported', hi: 'बहुत कम मॉडल समर्थित' },
+    relockSupport: { zh: '不支持', en: 'Not supported', hi: 'समर्थित नहीं' },
+    notes: { zh: '官方未提供解锁，极少数机型可通过特殊渠道申请。大部分机型未开源或源码不全。', en: 'No official unlock, very few models can apply via special channels. Most models not open source or incomplete.', hi: 'आधिकारिक अनलॉक नहीं, बहुत कम मॉडल विशेष चैनल के माध्यम से लागू कर सकते हैं। अधिकतर मॉडल ओपन सोर्स नहीं है या सोर्स कोड अधूरा है।' },
     lastUpdated: '2025-06-25',
     officialPolicy: 'https://www.vivo.com/en/',
     references: [
@@ -263,18 +259,17 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'realme',
     name: 'Realme',
-    logo: '🟡',
+    logo: '/logos/realme.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'partial',
     warrantyAfterUnlock: 'voided',
-    unlockMethod: { zh: '深度测试申请', en: 'Deep testing application', hi: '' },
-    unlockWaitTime: { zh: '168 小时（7 天）', en: '168 hours (7 days)', hi: '' },
-    unlockQuota: { zh: 'GT 系列首月 300 名，次月起每月 200 名，其他系列首月 200 名，次月起每月 200 名', en: 'GT series: 300 in first month, 200 per month after; others: 200 in first month, 200 per month after', hi: '' },
-    simCardRequirement: { zh: '需要', en: 'Required', hi: '' },
-    accountLimit: { zh: '需欢太账号，资格 7 天有效', en: 'Oppo account required, qualification valid for 7 days', hi: '' },
-    regionLimit: { zh: '中国大陆正规渠道', en: 'Mainland China official channels', hi: '' },
-    relockSupport: { zh: '支持', en: 'Supported', hi: '' },
-    notes: { zh: '需登录欢太账号申请深度测试，资格 7 天内有效。ROOT 后如能刷回官方系统则保修正常，否则仅保修不退换。解锁后 TEE 功能暂时屏蔽，回锁后恢复（SOTER key 除外）。', en: 'Deep testing application required with Oppo account, valid for 7 days. If rooted and flashed back to official system, warranty is normal, otherwise only repair, no return. TEE temporarily disabled after unlock, restored after relock (except SOTER key).', hi: '' },
+    unlockMethod: { zh: '深度测试申请', en: 'Deep testing application', hi: 'गहरा जांच आवेदन' },
+    unlockWaitTime: { zh: '168 小时（7 天）', en: '168 hours (7 days)', hi: '168 घंटे (7 दिन)' },
+    unlockQuota: { zh: 'GT 系列首月 300 名，次月起每月 200 名，其他系列首月 200 名，次月起每月 200 名', en: 'GT series: 300 in first month, 200 per month after; others: 200 in first month, 200 per month after', hi: 'GT श्रृंखला: पहले महीने में 300, अगले महीने से 200 प्रति महीना; अन्य: पहले महीने में 200, अगले महीने से 200 प्रति महीना' },
+    simCardRequirement: { zh: '需要', en: 'Required', hi: 'आवश्यक' },
+    accountLimit: { zh: '需欢太账号，资格 7 天有效', en: 'Oppo account required, qualification valid for 7 days', hi: 'ओप्पो खाता आवश्यक, 7 दिन के लिए अधिकृत' },
+    relockSupport: { zh: '支持', en: 'Supported', hi: 'समर्थित' },
+    notes: { zh: '需登录欢太账号申请深度测试，资格 7 天内有效。ROOT 后如能刷回官方系统则保修正常，否则仅保修不退换。解锁后 TEE 功能暂时屏蔽，回锁后恢复（SOTER key 除外）。', en: 'Deep testing application required with Oppo account, valid for 7 days. If rooted and flashed back to official system, warranty is normal, otherwise only repair, no return. TEE temporarily disabled after unlock, restored after relock (except SOTER key).', hi: 'ओप्पो खाता के साथ गहरा जांच आवेदन आवश्यक, 7 दिन के लिए वैध। रूट के बाद यदि फ़्लश करके फिर से आधिकारिक सिस्टम में फ़्लश किया जा सकता है, तो वारंटी सामान्य है, अन्यथा केवल रिपेयर, वापसी और विनिमय सेवा लागू नहीं होती। अनलॉक के बाद TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है, वापसी के बाद पुनर्स्थापित हो जाता है (SOTER कुंजी को छोड़कर)।' },
     lastUpdated: '2025-06-25',
     officialPolicy: 'https://www.realme.com/support',
     references: [
@@ -284,7 +279,7 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'motorola',
     name: 'Motorola',
-    logo: '🔓',
+    logo: '/logos/motorola.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
@@ -299,16 +294,65 @@ export const manufacturersData: ManufacturerData[] = [
   {
     id: 'sony',
     name: 'Sony',
-    logo: '🔓',
+    logo: '/logos/sony.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
     unlockMethod: { zh: '官方解锁门户', en: 'Official unlock portal', hi: 'आधिकारिक अनलॉक पोर्टल' },
-    notes: { zh: 'AOSP 支持优秀，部分机型解锁后相机功能可能丢失', en: 'Excellent AOSP support, camera features may be lost after unlock', hi: '' },
+    notes: { zh: 'AOSP 支持优秀，部分机型解锁后相机功能可能丢失', en: 'Excellent AOSP support, camera features may be lost after unlock', hi: 'अच्छा AOSP समर्थन, अनलॉक के बाद कैमरा सुविधाएं संभवतः खो जाएंगी' },
     lastUpdated: '2025-06-25',
     officialPolicy: 'https://forum.developer.sony.com/',
     references: [
       { url: 'https://android.fandom.com/wiki/Bootloader_unlocking', label: 'Android Wiki' }
+    ]
+  },
+  {
+    id: 'htc',
+    name: 'HTC',
+    logo: '/logos/htc.png',
+    bootloaderUnlock: 'limited',
+    kernelSource: 'partial',
+    warrantyAfterUnlock: 'maintained',
+    unlockMethod: { zh: '官方解锁门户', en: 'Official unlock portal', hi: 'आधिकारिक अनलॉक पोर्टल' },
+    notes: { zh: '解锁需注册 HTCdev 账户, 提交后会在几分钟内将解锁文件发至邮箱', en: 'Unlock requires HTCdev account, unlock file will be sent to email within minutes', hi: 'अनलॉक के लिए HTCdev खाता आवश्यक है, अनलॉक फ़ाइल को ईमेल में कुछ मिनट में भेजा जाएगा' },
+    lastUpdated: '2025-06-25',
+    officialPolicy: 'https://www.htc.com/support',
+    references: [
+      { url: 'https://xdaforums.com/t/coolpad-toolkit-utility-open-source.3609653/', label: 'XDA Forums' },
+      { url: 'https://www.htcdev.com/bootloader%20unlock', label: 'HTCdev' },
+      { url: 'https://www.htcdev.com/DevCenter', label: 'HTCdev DevCenter' }
+    ]
+  },
+  {
+    id: 'transsion',
+    name: 'Transsion',
+    logo: '/logos/transsion.png',
+    bootloaderUnlock: 'limited',
+    kernelSource: 'partial',
+    warrantyAfterUnlock: 'partial',
+    unlockMethod: { zh: '不详', en: 'Unknown', hi: 'अज्ञात' },
+    notes: { zh: '不详', en: 'Unknown', hi: 'अज्ञात' },
+    lastUpdated: '2025-06-25',
+    officialPolicy: 'https://www.transsion.com/',
+    references: [
+      { url: 'https://github.com/Transsion-MT6789-Resources', label: 'GitHub Transsion-MT6789-Resources' },
+    ]
+  },
+  {
+    id: 'Meizu',
+    name: 'Meizu',
+    logo: '/logos/meizu.png',
+    bootloaderUnlock: 'limited',
+    kernelSource: 'partial',
+    warrantyAfterUnlock: 'partial',
+    unlockMethod: { zh: '不详', en: 'Unknown', hi: 'अज्ञात' },
+    notes: { zh: '官方仅支持 root，但是root 后 OTA 功能失效', en: 'Official only supports root, but OTA function is disabled after root', hi: 'आधिकारिक केवल रूट का समर्थन करता है, लेकिन रूट के बाद OTA कार्य अक्षम हो जाता है' },
+    lastUpdated: '2025-06-25',
+    officialPolicy: 'https://mroot.flyme.cn/',
+    references: [
+      { url: 'https://github.com/meizuosc', label: 'GitHub meizuosc' },
+      { url: 'https://firmwarespro.com/bootloader/meizu-16-detail', label: 'Firmwarespro' },
+      { url: 'https://www.meizu.com/support/unlock', label: 'Meizu Support' },
     ]
   }
 ];
