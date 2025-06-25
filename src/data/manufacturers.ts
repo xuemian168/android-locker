@@ -103,25 +103,10 @@ export const manufacturersData: ManufacturerData[] = [
       en: 'None',
       hi: 'अगर'
     },
-    unlockQuota: {
-      zh: '',
-      en: '',
-      hi: ''
-    },
     simCardRequirement: {
       zh: '不需要',
       en: 'No need',
       hi: 'आवश्यक नहीं'
-    },
-    accountLimit: {
-      zh: '',
-      en: '',
-      hi: ''
-    },
-    regionLimit: {
-      zh: '',
-      en: '',
-      hi: ''
     },
     relockSupport: {
       zh: '支持',
@@ -304,10 +289,15 @@ export const manufacturersData: ManufacturerData[] = [
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
-    unlockMethod: { zh: '官方解锁门户', en: 'Official unlock portal', hi: 'आधिकारिक अनलॉक पोर्टल' },
+    regionLimit: {
+      zh: '日版无法解锁',
+      en: 'Japan models do not support unlock',
+      hi: 'जापान मॉडल अनलॉक समर्थित नहीं'
+    },
+    unlockMethod: { zh: '需要申请解锁码', en: 'Unlock code required', hi: 'अनलॉक कोड आवश्यक' },
     notes: { zh: 'AOSP 支持优秀，部分机型解锁后相机功能可能丢失', en: 'Excellent AOSP support, camera features may be lost after unlock', hi: 'अच्छा AOSP समर्थन, अनलॉक के बाद कैमरा सुविधाएं संभवतः खो जाएंगी' },
     lastUpdated: '2025-06-25',
-    officialPolicy: 'https://forum.developer.sony.com/',
+    officialPolicy: 'https://developer.sony.com/open-source/aosp-on-xperia-open-devices/get-started/unlock-bootloader/how-to-unlock-bootloader',
     references: [
       { url: 'https://android.fandom.com/wiki/Bootloader_unlocking', label: 'Android Wiki' }
     ]
