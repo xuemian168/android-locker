@@ -9,6 +9,10 @@
 
 [![Demo](https://img.shields.io/badge/Live%20Demo-a.zli.li-green?style=for-the-badge&logo=google-chrome)](https://a.zli.li/)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=xuemian168/android-locker&type=Date)](https://www.star-history.com/#xuemian168/android-locker&Date)
+
 # Android Manufacturer Bootloader Unlock Status
 
 A comprehensive, community-maintained hub for comparing bootloader unlock, kernel source, and warranty policies across major Android manufacturers. Supports multilingual SEO (Chinese, Hindi, English) and is optimized for deployment on GitHub Pages with custom domain support.
