@@ -5,7 +5,7 @@
 If you discover a security vulnerability in the Android Manufacturer Bootloader Unlock Status project, please report it as soon as possible to help us keep the community safe.
 
 - **Do not** open public issues for security vulnerabilities.
-- Instead, please email the maintainer directly at: xuemian168@gmail.com
+- Instead, please email the maintainer directly at: xuemian888@gmail.com
 - Include as much detail as possible, including steps to reproduce, potential impact, and any suggested fixes.
 - We will acknowledge receipt of your report within 2 business days and aim to provide a resolution or mitigation plan within 7 days.
 
