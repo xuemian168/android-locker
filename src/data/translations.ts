@@ -66,8 +66,8 @@ export interface Translations {
 
 export const translations: Record<Language, Translations> = {
   zh: {
-    title: 'Android 手机厂商 Bootloader 解锁状态',
-    subtitle: '各大Android手机厂商的Bootloader解锁、内核开源、保修政策对比',
+    title: 'BL List',
+    subtitle: '各大手机厂商的Bootloader解锁、内核开源、保修政策对比',
     contribute: '贡献到GitHub',
     
     overview: '概览',
@@ -112,24 +112,24 @@ export const translations: Record<Language, Translations> = {
     contributeDescription: '您可以通过GitHub提交Pull Request来更新数据、修复错误或添加新的手机厂商信息。',
     
     seo: {
-      title: 'Android 手机厂商 Bootloader 解锁状态',
-      description: '各大Android手机厂商的Bootloader解锁、内核开源、保修政策对比',
+      title: 'BL List',
+      description: '各大手机厂商的Bootloader解锁、内核开源、保修政策对比',
       keywords: 'Android, Bootloader, Unlock, Kernel, Warranty, Manufacturer, Comparison',
-      ogImage: 'https://yourdomain.com/og-image.png',
+      ogImage: 'https://a.zli.li/og-image.png',
       twitterCard: 'summary_large_image',
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Android Manufacturer Bootloader Unlock Status",
         "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers.",
-        "url": "https://yourdomain.com/"
+        "url": "https://a.zli.li/"
       }
     }
   },
   
   en: {
-    title: 'Android Manufacturer Bootloader Unlock Status',
-    subtitle: 'Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers',
+    title: 'BL List',
+    subtitle: 'Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers',
     contribute: 'Contribute on GitHub',
     
     overview: 'Overview',
@@ -174,24 +174,24 @@ export const translations: Record<Language, Translations> = {
     contributeDescription: 'You can contribute by submitting Pull Requests on GitHub to update data, fix errors, or add new manufacturer information.',
     
     seo: {
-      title: 'Android Manufacturer Bootloader Unlock Status',
-      description: 'Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers.',
+      title: 'BL List',
+      description: 'Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers.',
       keywords: 'Android, Bootloader, Unlock, Kernel, Warranty, Manufacturer, Comparison',
-      ogImage: 'https://yourdomain.com/og-image.png',
+      ogImage: 'https://a.zli.li/og-image.png',
       twitterCard: 'summary_large_image',
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Android Manufacturer Bootloader Unlock Status",
-        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers.",
+        "name": "BL List",
+        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers.",
         "url": "https://a.zli.li/"
       }
     }
   },
   
   hi: {
-    title: 'एंड्राइड निर्माता बूटलोडर अनलॉक स्थिति',
-    subtitle: 'एंड्राइड निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना',
+    title: 'BL List',
+    subtitle: 'निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना',
     contribute: 'GitHub पर योगदान करें',
     
     overview: 'अवलोकन',
@@ -236,17 +236,17 @@ export const translations: Record<Language, Translations> = {
     contributeDescription: 'आप डेटा अपडेट करने, त्रुटियों को ठीक करने या नई निर्माता जानकारी जोड़ने के लिए GitHub पर Pull Request सबमिट कर सकते हैं।',
     
     seo: {
-      title: 'एंड्राइड निर्माता बूटलोडर अनलॉक स्थिति',
-      description: 'एंड्राइड निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना',
+      title: 'BL List',
+      description: 'निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना',
       keywords: 'एंड्राइड, बूटलोडर, अनलॉक, कर्नेल, वारंटी, निर्माता, तुलना',
-      ogImage: 'https://yourdomain.com/og-image.png',
+      ogImage: 'https://a.zli.li/og-image.png',
       twitterCard: 'summary_large_image',
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "एंड्राइड निर्माता बूटलोडर अनलॉक स्थिति",
-        "description": "एंड्राइड निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना",
-        "url": "https://yourdomain.com/"
+        "name": "BL List",
+        "description": "निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना",
+        "url": "https://a.zli.li/"
       }
     }
   }
