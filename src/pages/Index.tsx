@@ -22,7 +22,14 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
   const [currentLanguage, setCurrentLanguage] = useState<Language>(initialLang);
   const safeTranslations = translations[currentLanguage] || translations['zh'];
   const t = { ...safeTranslations, lang: currentLanguage };
-  const seo = t.seo || {};
+  const seo = t.seo ?? {
+    title: '',
+    description: '',
+    keywords: '',
+    ogImage: '',
+    twitterCard: '',
+    jsonLd: undefined
+  };
   const hreflangs = [
     { lang: 'zh', url: 'https://a.zli.li/zh/' },
     { lang: 'en', url: 'https://a.zli.li/en/' },
@@ -224,8 +231,14 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
               <p className="text-sm text-muted-foreground mb-2">
                 {t.communityMaintained} • {t.contributorsWelcome}
               </p>
-              <p className="text-xs text-muted-foreground">
+              {/* <p className="text-xs text-muted-foreground">
                 {t.lastDataUpdate}: {new Date().toLocaleDateString()}
+              </p> */}
+              <p className="text-xs text-muted-foreground mt-2">
+                Powered by <a href="https://www.ict.run" target="_blank" rel="noopener noreferrer" className="underline hover:text-android-700">ict.run</a> @ {new Date().getFullYear()}
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                Refer: <a href="https://zli.li" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-700">zli.li - Domain Scanner</a> ,<a href="https://h.zli.li" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-700">Hangzhou-Lang</a>
               </p>
             </div>
           </div>
