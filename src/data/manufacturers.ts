@@ -402,9 +402,9 @@ export const manufacturersData: ManufacturerData[] = [
       hi: "अनलॉक कोड की आवश्यकता नहीं"
     },
     notes: {
-      zh: "解锁后会暂时屏蔽 TEE，回锁后恢复（解锁后的 TEE 功能可使用 OPPO/OnePlus/Realme 的方法修复）",
-      en: "TEE will be temporarily disabled after unlock, restored after relock (TEE function can be repaired using OPPO/OnePlus/Realme methods)",
-      hi: "अनलॉक के बाद TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है, वापसी के बाद पुनर्स्थापित हो जाता है (अनलॉक के बाद TEE कार्य को OPPO/OnePlus/Realme के तरीकों का उपयोग करके विभाजित किया जा सकता है)"
+      zh: "解锁后，TEE 将会暂时屏蔽，回锁后恢复（解锁后的 TEE 功能可以使用 OPPO/OnePlus/Realme 的方法修复）。可以通过安装认证密钥来修复 TEE 功能，使其重新工作。这种方法在 OPPO、OnePlus 和 Realme 等品牌的 Qualcomm 平台设备上也被采用。然而，需要注意的是，安装认证密钥是一个不可逆的过程，并且存在风险。此外，从设备的原始密钥库中提取认证密钥是不可能的，网络上流传的密钥也可能已被 Google 撤销。",
+      en: "After unlocking, TEE will be temporarily disabled and restored after relocking (TEE function can be repaired using OPPO/OnePlus/Realme methods). The TEE function can be repaired by installing an attestation key, making it work again. This method is also used on Qualcomm platform devices from brands like OPPO, OnePlus, and Realme. However, it is important to note that installing an attestation key is an irreversible process and carries risks. Additionally, extracting an attestation key from the device's original key store is not possible, and keys circulating on the network may have been revoked by Google.",
+      hi: "अनलॉक करने के बाद, TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है और पुनर्लॉक करने के बाद पुनर्स्थापित हो जाता है (अनलॉक के बाद TEE कार्य को OPPO/OnePlus/Realme के तरीकों का उपयोग करके सुधारा जा सकता है)।अनलॉक के बाद TEE कार्य को सुधारने के लिए प्रमाणीकरण कुंजी स्थापित की जा सकती है, इसे पुनर्स्थापित करने के लिए विभाजित किया जा सकता है। इस विधि का उपयोग OPPO, OnePlus, और Realme जैसे ब्रांडों के Qualcomm प्लेटफॉर्म उपकरणों पर भी किया जाता है। हालांकि, यह ध्यान रखना महत्वपूर्ण है कि प्रमाणीकरण कुंजी स्थापित करना एक अविवर्तनीय प्रक्रिया है और जोखिम उठाती है। इसके अलावा, उपकरण के मूल कुंजी स्टोर से प्रमाणीकरण कुंजी निकालना संभव नहीं है, और नेटवर्क पर प्रसारित कुंजी को Google द्वारा वापस लिया जा सकता है।"
     },
     lastUpdated: "2025-06-25",
     officialPolicy: "https://nothing.tech/pages/glyph-developer-kit",
@@ -420,6 +420,10 @@ export const manufacturersData: ManufacturerData[] = [
       {
         "url": "https://www.xda-developers.com/nothing-phone-1-kernel-source-code/",
         "label": "XDA Developers - Nothing Phone 1 Kernel Source Code"
+      },
+      {
+        "url": "https://xdaforums.com/t/fix-widevine-l1-unlocked-bootloader.4731374/",
+        "label": "XDA Forums - Fix Widevine L1 Unlocked Bootloader"
       }
     ]
   },
