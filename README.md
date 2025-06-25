@@ -1,3 +1,14 @@
+![Contributors](https://img.shields.io/github/contributors/xuemian168/android-locker?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/xuemian168/android-locker?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/xuemian168/android-locker?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/xuemian168/android-locker?style=for-the-badge)
+![Pull Requests](https://img.shields.io/github/issues-pr/xuemian168/android-locker?style=for-the-badge)
+![License](https://img.shields.io/github/license/xuemian168/android-locker?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/xuemian168/android-locker?style=for-the-badge)
+![Build](https://github.com/xuemian168/android-locker/actions/workflows/deploy.yml/badge.svg?style=for-the-badge)
+
+[![Demo](https://img.shields.io/badge/Live%20Demo-a.zli.li-green?style=for-the-badge&logo=google-chrome)](https://a.zli.li/)
+
 # Android Manufacturer Bootloader Unlock Status
 
 A comprehensive, community-maintained hub for comparing bootloader unlock, kernel source, and warranty policies across major Android manufacturers. Supports multilingual SEO (Chinese, Hindi, English) and is optimized for deployment on GitHub Pages with custom domain support.
