@@ -360,8 +360,42 @@ export const manufacturersData: ManufacturerData[] = [
       { url: 'https://firmwarespro.com/bootloader/meizu-16-detail', label: 'Firmwarespro' },
       { url: 'https://www.meizu.com/support/unlock', label: 'Meizu Support' },
     ]
-  }
-];
+  },
+  {
+    "id": "Asus",
+    "name": "Asus",
+    "logo": "/logos/asus.png",
+    "bootloaderUnlock": "limited",
+    "kernelSource": "partial",
+    "warrantyAfterUnlock": "voided",
+    "unlockMethod": {
+      "zh": "部分设备可通过官方解锁工具解锁",
+      "en": "Official unlock tool available for some devices",
+      "hi": "कुछ उपकरणों के लिए आधिकारिक अनलॉक टूल उपलब्ध है"
+    },
+    "notes": {
+      "zh": "自 2023 年起，华硕移除了官方解锁工具，部分设备无法解锁",
+      "en": "Since 2023, Asus has removed the official unlock tool; some devices cannot be unlocked",
+      "hi": "2023 से, Asus ने आधिकारिक अनलॉक टूल हटा दिया है; कुछ उपकरणों को अनलॉक नहीं किया जा सकता"
+    },
+    "lastUpdated": "2025-06-25",
+    "officialPolicy": "https://zentalk.asus.com/t5/rog-phone-5/official-bootloader-unlock-os-rollback-support/td-p/254324",
+    "references": [
+      {
+        "url": "https://www.androidpolice.com/thread/asus-wont-support-bootloader-unlocking-anymore/",
+        "label": "Android Police"
+      },
+      {
+        "url": "https://www.xda-developers.com/asus-zenfone-9-bootloader-unlock-tool-kernel-sources-firmware/",
+        "label": "XDA Developers"
+      },
+      {
+        "url": "https://github.com/asus-development",
+        "label": "Asus Development on GitHub"
+      }
+    ]
+  },
+]
 
 export const getStatusColor = (status: string) => {
   switch (status) {
