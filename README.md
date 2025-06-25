@@ -11,7 +11,7 @@ A comprehensive, community-maintained hub for comparing bootloader unlock, kerne
 - Custom 404 page, animated with framer-motion and SVG
 
 ## Live Demo
-- [Production Site](https://a.zli.li/)
+- [a.zli.li](https://a.zli.li/)
 
 ## Getting Started
 
@@ -45,7 +45,7 @@ npm run preview
 - For GitHub Pages subpath, set `base: '/your-repo-name/'`.
 
 ## Contributing
-See [CONTRIBUTION.md](CONTRIBUTION.md) for guidelines.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
 ## References
 1. [MobileModels Bootloader/Kernel Source List](https://github.com/KHwang9883/MobileModels/blob/afa441e496b64f7c918926bfe5d6acf9c1c3296a/misc/bootloader-kernel-source.md)
