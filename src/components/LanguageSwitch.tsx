@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -31,6 +31,25 @@ export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
   currentLanguage,
   onLanguageChange
 }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // 计算当前路径去除语言前缀
+  const getBasePath = () => {
+    const path = location.pathname;
+    if (path.startsWith('/zh/')) return path.replace(/^\/zh/, '');
+    if (path.startsWith('/en/')) return path.replace(/^\/en/, '');
+    if (path.startsWith('/hi/')) return path.replace(/^\/hi/, '');
+    return path;
+  };
+
+  const handleLanguageChange = (lang: Language) => {
+    // 跳转到对应语言前缀路径
+    const base = getBasePath();
+    navigate(`/${lang}${base}`);
+    onLanguageChange(lang);
+  };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -48,7 +67,7 @@ export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
         {Object.entries(languageNames).map(([code, name]) => (
           <DropdownMenuItem
             key={code}
-            onClick={() => onLanguageChange(code as Language)}
+            onClick={() => handleLanguageChange(code as Language)}
             className={`cursor-pointer gap-2 ${
               currentLanguage === code ? 'bg-android-50' : ''
             }`}

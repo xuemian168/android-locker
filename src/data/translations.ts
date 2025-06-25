@@ -52,6 +52,16 @@ export interface Translations {
   aboutDescription: string;
   howToContribute: string;
   contributeDescription: string;
+  
+  // SEO
+  seo?: {
+    title: string;
+    description: string;
+    keywords: string;
+    ogImage?: string;
+    twitterCard?: string;
+    jsonLd?: object;
+  };
 }
 
 export const translations: Record<Language, Translations> = {
@@ -99,7 +109,22 @@ export const translations: Record<Language, Translations> = {
     aboutTitle: '关于本项目',
     aboutDescription: '这个项目旨在帮助Android用户了解不同手机厂商对于Bootloader解锁、内核开源和保修政策的态度。所有数据由社区收集和维护，欢迎大家贡献。',
     howToContribute: '如何贡献',
-    contributeDescription: '您可以通过GitHub提交Pull Request来更新数据、修复错误或添加新的手机厂商信息。'
+    contributeDescription: '您可以通过GitHub提交Pull Request来更新数据、修复错误或添加新的手机厂商信息。',
+    
+    seo: {
+      title: 'Android 手机厂商 Bootloader 解锁状态',
+      description: '各大Android手机厂商的Bootloader解锁、内核开源、保修政策对比',
+      keywords: 'Android, Bootloader, Unlock, Kernel, Warranty, Manufacturer, Comparison',
+      ogImage: 'https://yourdomain.com/og-image.png',
+      twitterCard: 'summary_large_image',
+      jsonLd: {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Android Manufacturer Bootloader Unlock Status",
+        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers.",
+        "url": "https://yourdomain.com/"
+      }
+    }
   },
   
   en: {
@@ -146,7 +171,22 @@ export const translations: Record<Language, Translations> = {
     aboutTitle: 'About This Project',
     aboutDescription: 'This project aims to help Android users understand different manufacturers\' attitudes towards bootloader unlocking, kernel source availability, and warranty policies. All data is collected and maintained by the community.',
     howToContribute: 'How to Contribute',
-    contributeDescription: 'You can contribute by submitting Pull Requests on GitHub to update data, fix errors, or add new manufacturer information.'
+    contributeDescription: 'You can contribute by submitting Pull Requests on GitHub to update data, fix errors, or add new manufacturer information.',
+    
+    seo: {
+      title: 'Android Manufacturer Bootloader Unlock Status',
+      description: 'Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers.',
+      keywords: 'Android, Bootloader, Unlock, Kernel, Warranty, Manufacturer, Comparison',
+      ogImage: 'https://yourdomain.com/og-image.png',
+      twitterCard: 'summary_large_image',
+      jsonLd: {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Android Manufacturer Bootloader Unlock Status",
+        "description": "Comparison of Bootloader unlock, kernel source, and warranty policies across Android manufacturers.",
+        "url": "https://a.zli.li/"
+      }
+    }
   },
   
   hi: {
@@ -193,6 +233,21 @@ export const translations: Record<Language, Translations> = {
     aboutTitle: 'इस परियोजना के बारे में',
     aboutDescription: 'यह परियोजना एंड्राइड उपयोगकर्ताओं को विभिन्न निर्माताओं के बूटलोडर अनलॉकिंग, कर्नेल स्रोत उपलब्धता और वारंटी नीतियों के प्रति दृष्टिकोण को समझने में मदद करती है।',
     howToContribute: 'योगदान कैसे करें',
-    contributeDescription: 'आप डेटा अपडेट करने, त्रुटियों को ठीक करने या नई निर्माता जानकारी जोड़ने के लिए GitHub पर Pull Request सबमिट कर सकते हैं।'
+    contributeDescription: 'आप डेटा अपडेट करने, त्रुटियों को ठीक करने या नई निर्माता जानकारी जोड़ने के लिए GitHub पर Pull Request सबमिट कर सकते हैं।',
+    
+    seo: {
+      title: 'एंड्राइड निर्माता बूटलोडर अनलॉक स्थिति',
+      description: 'एंड्राइड निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना',
+      keywords: 'एंड्राइड, बूटलोडर, अनलॉक, कर्नेल, वारंटी, निर्माता, तुलना',
+      ogImage: 'https://yourdomain.com/og-image.png',
+      twitterCard: 'summary_large_image',
+      jsonLd: {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "एंड्राइड निर्माता बूटलोडर अनलॉक स्थिति",
+        "description": "एंड्राइड निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना",
+        "url": "https://yourdomain.com/"
+      }
+    }
   }
 };
