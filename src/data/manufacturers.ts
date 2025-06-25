@@ -306,7 +306,7 @@ export const manufacturersData: ManufacturerData[] = [
     unlockMethod: { zh: '官方解锁门户', en: 'Official unlock portal', hi: 'आधिकारिक अनलॉक पोर्टल' },
     notes: { zh: 'AOSP 支持优秀，部分机型解锁后相机功能可能丢失', en: 'Excellent AOSP support, camera features may be lost after unlock', hi: '' },
     lastUpdated: '2025-06-25',
-    officialPolicy: 'https://developer.sony.com/develop/open-devices/',
+    officialPolicy: 'https://forum.developer.sony.com/',
     references: [
       { url: 'https://android.fandom.com/wiki/Bootloader_unlocking', label: 'Android Wiki' }
     ]
