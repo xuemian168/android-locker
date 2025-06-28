@@ -428,6 +428,52 @@ export const manufacturersData: ManufacturerData[] = [
     ]
   },
   {
+    id: "Nubia",
+    name: "Nubia",
+    logo: "/logos/nubia.png",
+    bootloaderUnlock: "limited",
+    kernelSource: "partial",
+    warrantyAfterUnlock: "voided",
+    unlockMethod: {
+      zh: "努比亚官方不提供解锁",
+      en: "Nubia does not provide unlocking",
+      hi: "नुबिया अनलॉक प्रदान नहीं करता"
+    },
+    notes: {
+      zh: "红魔 9 系列及后续的新产品不再提供解锁；红魔 8 等旧产品更新系统后也不再提供解锁",
+      en: "Red Magic 9 series and subsequent products do not provide unlocking; Red Magic 8 and other old products do not provide unlocking after updating the system",
+      hi: "रेड मैजिक 9 सीरीज और उसके बाद के उत्पाद अनलॉक प्रदान नहीं करते; रेड मैजिक 8 और अन्य पुराने उत्पाद सिस्टम अपडेट करने के बाद अनलॉक प्रदान नहीं करते"
+    },
+    lastUpdated: "2025-06-25",
+    officialPolicy: "https://www.nubia.com/",
+    references: [
+      {
+        "url": "https://github.com/ztemt",
+        "label": "Nubia on GitHub"
+      },
+      {
+        "url": "https://opensource.ztedevices.com/",
+        "label": "Nubia Open Source"
+      },
+      {
+        "url": "https://github.com/DoganM95/Red-Magic",
+        "label": "Red Magic Unlock"
+      },
+      {
+        "url": "https://github.com/nubia-development",
+        "label": "Unofficial | Nubia Custom Kernel & Rom Projectt"
+      },
+      {
+        "url": "https://help.redmagic.gg/hc/en-us/articles/360030687292-Will-rooting-or-unlocking-the-bootloader-void-my-warranty",
+        "label": "Red Magic - Will rooting or unlocking the bootloader void my warranty?"
+      },
+      {
+        "url": "https://global.redmagic.gg/blogs/faq/reddit-faq-we-answer-the-latest-questions-for-redmagic",
+        "label": "Red Magic - Reddit FAQ"
+      }
+    ]
+  },
+  {
     id: "MediaTek",
     name: "MediaTek",
     logo: "/logos/mediatek.png",
