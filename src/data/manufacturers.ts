@@ -33,16 +33,16 @@ export interface ManufacturerData {
 
 export const manufacturersData: ManufacturerData[] = [
   {
-    id: 'xiaomi',
-    name: 'Xiaomi',
+    id: 'xiaomi-cn',
+    name: 'Xiaomi (CN)',
     logo: '/logos/xiaomi.png',
     bootloaderUnlock: 'supported',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
     unlockMethod: {
-      zh: '官方解锁工具+社区App申请',
-      en: 'Official unlock tool + Community App application',
-      hi: 'आधिकारिक अनलॉक टूल + कम्युनिटी ऐप आवेदन'
+      zh: '官方解锁工具+社区App实名申请，需社区等级、答题、注册满180天',
+      en: 'Official unlock tool + Community App with real-name authentication, community level, quiz, and 180 days registration',
+      hi: 'आधिकारिक अनलॉक टूल + कम्युनिटी ऐप, असली नाम सत्यापन, कम्युनिटी लेवल, क्विज़, 180 दिन पुराना खाता'
     },
     unlockWaitTime: {
       zh: 'HyperOS: 72 小时；MIUI: 168/360-2880 小时',
@@ -65,9 +65,9 @@ export const manufacturersData: ManufacturerData[] = [
       hi: 'चीनी मॉडल के लिए असली नाम सत्यापन, कम्युनिटी लेवल 5, क्विज़ पास, 180 दिन पुराना खाता आवश्यक'
     },
     regionLimit: {
-      zh: '国行/非国行政策不同',
-      en: 'Different policies for CN/global models',
-      hi: 'चीनी/ग्लोबल मॉडल के लिए अलग नीति'
+      zh: '仅国行适用',
+      en: 'Applies to CN models only',
+      hi: 'केवल चीनी मॉडल के लिए'
     },
     relockSupport: {
       zh: '支持',
@@ -79,11 +79,99 @@ export const manufacturersData: ManufacturerData[] = [
       en: 'CN models require application via Mi Community App, unlock permission valid for 14 days, warranty void after unlock, some models not supported, strict risk control, violating accounts permanently banned. SIM card required and binding, wait time starts from binding. Some models not open source or unusable.',
       hi: 'चीनी मॉडल के लिए Mi Community App से आवेदन आवश्यक, 14 दिन के लिए अनलॉक अनुमति, अनलॉक के बाद वारंटी समाप्त, कुछ मॉडल समर्थित नहीं, सख्त जोखिम नियंत्रण, उल्लंघन करने वाले खाते स्थायी रूप से प्रतिबंधित। सिम कार्ड आवश्यक, बाइंडिंग से प्रतीक्षा समय शुरू। कुछ मॉडल ओपन सोर्स नहीं हैं या उपयोग योग्य नहीं हैं।'
     },
-    lastUpdated: '2025-06-25',
+    lastUpdated: '2025-06-29',
     officialPolicy: 'https://www.miui.com/unlock/',
     references: [
       { url: 'https://github.com/melontini/bootloader-unlock-wall-of-shame', label: 'Wall of Shame' },
-      { url: 'https://android.fandom.com/wiki/Bootloader_unlocking', label: 'Android Wiki' }
+      { url: 'https://android.fandom.com/wiki/Bootloader_unlocking', label: 'Android Wiki' },
+      {
+        "url": "https://www.gizmochina.com/2025/01/20/xiaomi-2025-bootloader-unlock-policy-explained/",
+        "label": "Xiaomi 2025 Bootloader Unlock Policy Explained"
+      },
+      {
+        "url": "https://www.mi.com/global/support/faq/details/KA-533394",
+        "label": "Safety Instructions and Precautions of Unlocking Bootloader - Xiaomi"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Xiaomi_HyperOS",
+        "label": "Xiaomi HyperOS - Wikipedia"
+      }
+    ]
+  },
+  {
+    id: 'xiaomi-global',
+    name: 'Xiaomi (Global)',
+    logo: '/logos/xiaomi.png',
+    bootloaderUnlock: 'supported',
+    kernelSource: 'open',
+    warrantyAfterUnlock: 'partial',
+    unlockMethod: {
+      zh: '官方解锁工具，官网直接申请，无需社区App，无需实名、答题、等级',
+      en: 'Official unlock tool, apply directly on the website, no Community App, no real-name, quiz, or level required',
+      hi: 'आधिकारिक अनलॉक टूल, वेबसाइट पर सीधे आवेदन, कम्युनिटी ऐप, असली नाम, क्विज़ या लेवल की आवश्यकता नहीं'
+    },
+    unlockWaitTime: {
+      zh: '一般为 72 小时，部分新机型可能无等待期',
+      en: 'Usually 72h, some new models may have no waiting period',
+      hi: 'आमतौर पर 72 घंटे, कुछ नए मॉडल में प्रतीक्षा अवधि नहीं होती'
+    },
+    unlockQuota: {
+      zh: '每个小米账户每年仅可解锁一台，适用于全球市场，包括欧洲、印度、东南亚等地区。',
+      en: 'Only one device per Mi account per year, applicable to global markets including Europe, India, Southeast Asia, etc.',
+      hi: 'प्रति वर्ष केवल एक डिवाइस प्रति मि खाता, विश्व बाजार में लागू, यूरोप, इंडिया, सूथ-एशिया आदि शामिल'
+    },
+    simCardRequirement: {
+      zh: '需要',
+      en: 'Required',
+      hi: 'आवश्यक'
+    },
+    accountLimit: {
+      zh: '仅需小米账号(国际版注册满30天)，无需社区等级、实名、答题',
+      en: 'Only Mi account (registered for 30 days in Global) required, no community level, real-name, or quiz',
+      hi: 'केवल Mi खाता (ग्लोबल में 30 दिन पुराना) आवश्यक, कम्युनिटी लेवल, असली नाम या क्विज़ की आवश्यकता नहीं'
+    },
+    regionLimit: {
+      zh: '仅国际版适用 \n 根据欧洲指令 1999/44/EC，除非卖方能证明修改行为导致了缺陷，否则更换原始操作系统不会使法定保修失效。\n 印度小米官方表示：解锁引导程序不会自动使硬件保修失效。但如果解锁导致无法通过软件修复的设备损坏，保修将失效。',
+      en: 'Applies to Global models only \n According to European Directive 1999/44/EC, unless the seller can prove that the modification caused a defect, replacing the original operating system will not void the statutory warranty. \n Xiaomi India official statement: unlocking the bootloader will not automatically void the hardware warranty. However, if the device is damaged and cannot be repaired through software, the warranty will be void.',
+      hi: 'केवल ग्लोबल मॉडल के लिए \n यूरोपीय निर्देश 1999/44/EC के अनुसार, यदि विक्रेता सिफारिश नहीं कर सकता कि संशोधन एक दोष का कारण बना है, मूल ऑपरेटिंग सिस्टम को बदलने से विधिवादी वारंटी अवश्य हो जाएगी। \n इंडिया मियो आधिकारिक दावा: बूटलोडर अनलॉक करने से हार्डवेयर वारंटी स्वयं अवश्य हो जाएगी। लेकिन यदि उपकरण को सॉफ़्टवेयर के माध्यम से ठीक करने में असमर्थ हो जाता है, तो वारंटी अवश्य हो जाएगी।'
+    },
+    relockSupport: {
+      zh: '支持 Mi Unlock 工具，选择“锁定”选项',
+      en: 'Supported, select "Lock" option in Mi Unlock tool',
+      hi: 'समर्थित, Mi Unlock टूल में "लॉक" विकल्प चुनें'
+    },
+    notes: {
+      zh: '国际版通过官网解锁工具直接申请，等待时长短，绝大多数机型支持解锁，风控宽松。部分地区（如印度定制机）有特殊限制。解锁后保修政策以当地法律为准。',
+      en: 'Global models apply directly via the official unlock tool, short waiting period, most models supported, relaxed risk control. Some regions (e.g. India custom models) have special restrictions. Warranty policy after unlock depends on local law.',
+      hi: 'ग्लोबल मॉडल आधिकारिक अनलॉक टूल के माध्यम से सीधे आवेदन करते हैं, प्रतीक्षा अवधि कम है, अधिकांश मॉडल समर्थित हैं, जोखिम नियंत्रण ढीला है। कुछ क्षेत्रों (जैसे भारत के कस्टम मॉडल) में विशेष प्रतिबंध हैं। अनलॉक के बाद वारंटी नीति स्थानीय कानून पर निर्भर करती है।'
+    },
+    lastUpdated: '2025-06-29',
+    officialPolicy: 'https://www.miui.com/unlock/',
+    references: [
+      {
+        "url": "https://www.xda-developers.com/xiaomi-india-clarifies-bootloader-unlocking-does-not-void-warranty/",
+        "label": "Xiaomi India Clarifies Bootloader Unlocking Does Not Void Warranty"
+      },
+      {
+        "url": "https://xiaomi.eu/community/threads/free-official-hyperos-unlock-bootloader.71323/",
+        "label": "Free Official HyperOS Unlock Bootloader"
+      },
+      {
+        "url": "https://fossbytes.com/xiaomi-unlock-bootloader-doesnt-void-warranty/",
+        "label": "Unlocking Bootloader Won't Void Warranty, Says Xiaomi"
+      },
+      {
+        "url": "https://www.mi.com/global/support/faq/details/KA-533394",
+        "label": "Safety Instructions and Precautions of Unlocking Bootloader - Xiaomi"
+      },
+      {
+        "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
+        "label": "Xiaomi Kernel Open Source"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Rooting_%28Android%29",
+        "label": "Rooting (Android) - Wikipedia"
+      }
     ]
   },
   {
@@ -237,7 +325,7 @@ export const manufacturersData: ManufacturerData[] = [
     bootloaderUnlock: 'limited',
     kernelSource: 'partial',
     warrantyAfterUnlock: 'voided',
-    unlockMethod: { zh: '开发者计划（极少数机型）', en: 'Developer program (very few models)', hi: 'डेवलपर प्रोग्राम (बहुत कम मॉडल)' },
+    unlockMethod: { zh: '开发者计划（极少数机型）', en: 'Developer program (very few models)', hi: 'गहरा जांच आवेदन' },
     regionLimit: { zh: '极少数机型支持', en: 'Very few models supported', hi: 'बहुत कम मॉडल समर्थित' },
     relockSupport: { zh: '不支持', en: 'Not supported', hi: 'समर्थित नहीं' },
     notes: { zh: '官方未提供解锁，极少数机型可通过特殊渠道申请。大部分机型未开源或源码不全。', en: 'No official unlock, very few models can apply via special channels. Most models not open source or incomplete.', hi: 'आधिकारिक अनलॉक नहीं, बहुत कम मॉडल विशेष चैनल के माध्यम से लागू कर सकते हैं। अधिकतर मॉडल ओपन सोर्स नहीं है या सोर्स कोड अधूरा है।' },
@@ -444,7 +532,7 @@ export const manufacturersData: ManufacturerData[] = [
       en: "Red Magic 9 series and subsequent products do not provide unlocking; Red Magic 8 and other old products do not provide unlocking after updating the system",
       hi: "रेड मैजिक 9 सीरीज और उसके बाद के उत्पाद अनलॉक प्रदान नहीं करते; रेड मैजिक 8 और अन्य पुराने उत्पाद सिस्टम अपडेट करने के बाद अनलॉक प्रदान नहीं करते"
     },
-    lastUpdated: "2025-06-25",
+    lastUpdated: "2025-06-29",
     officialPolicy: "https://www.nubia.com/",
     references: [
       {
