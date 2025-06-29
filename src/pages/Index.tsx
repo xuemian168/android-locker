@@ -18,8 +18,42 @@ interface IndexProps {
 const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
   const params = useParams();
   const paramLang = params.lang as Language | undefined;
-  const initialLang = forcedLanguage || paramLang || 'zh';
+
+  // 支持的语言
+  const supported: Language[] = ['zh', 'en', 'hi'];
+
+  // 检查localStorage
+  let storedLang: Language | null = null;
+  if (typeof window !== 'undefined') {
+    storedLang = (localStorage.getItem('lang') as Language) || null;
+  }
+
+  // 检查浏览器语言
+  let browserLang: Language | null = null;
+  if (typeof window !== 'undefined' && navigator.language) {
+    const langPrefix = navigator.language.split('-')[0];
+    if (supported.includes(langPrefix as Language)) {
+      browserLang = langPrefix as Language;
+    }
+  }
+
+  // 语言优先级：forcedLanguage > URL参数 > localStorage > 浏览器 > 默认zh
+  const initialLang = forcedLanguage
+    || paramLang
+    || storedLang
+    || browserLang
+    || 'zh';
+
   const [currentLanguage, setCurrentLanguage] = useState<Language>(initialLang);
+
+  // 切换语言时记忆到localStorage
+  const handleLanguageChange = (lang: Language) => {
+    setCurrentLanguage(lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('lang', lang);
+    }
+  };
+
   const safeTranslations = translations[currentLanguage] || translations['zh'];
   const t = { ...safeTranslations, lang: currentLanguage };
   const seo = t.seo ?? {
@@ -87,7 +121,7 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
               <div className="flex items-center gap-3">
                 <LanguageSwitch 
                   currentLanguage={currentLanguage}
-                  onLanguageChange={setCurrentLanguage}
+                  onLanguageChange={handleLanguageChange}
                 />
                 <Button 
                   asChild
