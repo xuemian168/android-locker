@@ -429,14 +429,15 @@ export const manufacturersData: ManufacturerData[] = [
     bootloaderUnlock: 'limited',
     kernelSource: 'partial',
     warrantyAfterUnlock: 'partial',
-    unlockMethod: { zh: '不详', en: 'Unknown', hi: 'अज्ञात' },
-    notes: { zh: '官方仅支持 root，但是root 后 OTA 功能失效', en: 'Official only supports root, but OTA function is disabled after root', hi: 'आधिकारिक केवल रूट का समर्थन करता है, लेकिन रूट के बाद OTA कार्य अक्षम हो जाता है' },
-    lastUpdated: '2025-06-25',
+    unlockMethod: { zh: '目前，魅族官方未提供统一的 Bootloader 解锁工具或流程。现有的解锁方法多为社区开发，涉及修改系统文件、利用特定漏洞或使用第三方工具，操作复杂且风险较高。', en: 'No official unlock tool or process provided by Meizu. Most unlock methods are community-developed, involving modifying system files, exploiting specific vulnerabilities, or using third-party tools, which are complex and risky.', hi: 'मेजू के लिए आधिकारिक अनलॉक टूल या प्रक्रिया प्रदान नहीं की जाती है। मौजूदा अनलॉक तरीकों में से अधिकांश समुदाय द्वारा विकसित होते हैं, सिस्टम फ़ाइलों को संशोधित करने के लिए, विशिष्ट दोषों का उपयोग करने या तीसरे पक्ष के उपकरणों का उपयोग करने से जुड़े होते हैं, जो जटिल और जोखिमपूर्ण हैं।' },
+    notes: { zh: '官方仅支持 root，但是root 后 OTA 功能失效。并且需要填写申请表等待官方审核。', en: 'Official only supports root, but OTA function is disabled after root. And you need to fill in the application form and wait for official review.', hi: 'आधिकारिक केवल रूट का समर्थन करता है, लेकिन रूट के बाद OTA कार्य अक्षम हो जाता है। और आपको आवेदन फ़ॉर्म भरने और आधिकारिक समीक्षा के लिए इंतजार करने की आवश्यकता है।' },
+    lastUpdated: '2025-06-29',
     officialPolicy: 'https://mroot.flyme.cn/',
     references: [
       { url: 'https://github.com/meizuosc', label: 'GitHub meizuosc' },
       { url: 'https://firmwarespro.com/bootloader/meizu-16-detail', label: 'Firmwarespro' },
       { url: 'https://www.meizu.com/support/unlock', label: 'Meizu Support' },
+      { url: 'https://xdaforums.com/t/tutorial-unlock-the-meizu-m5-note-bootloader.3940000/', label: '[TUTORIAL] Unlock the Meizu M5 Note bootloader' },
     ]
   },
   {
