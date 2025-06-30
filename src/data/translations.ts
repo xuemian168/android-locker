@@ -198,65 +198,66 @@ export const translations: Record<Language, Translations> = {
   
   hi: {
     title: 'BL List',
-    subtitle: 'निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना',
+    subtitle: 'मैन्युफैक्चरर्स में बूटलोडर अनलॉक, कर्नेल सोर्स और वारंटी नीतियों की तुलना',
     contribute: 'GitHub पर योगदान करें',
     
-    overview: 'अवलोकन',
-    manufacturers: 'निर्माता',
-    about: 'परियोजना के बारे में',
+    overview: 'समीक्षा',
+    manufacturers: 'मैन्युफैक्चरर्स',
+    about: 'परिचय',
     
-    manufacturer: 'निर्माता',
+    manufacturer: 'मैन्युफैक्चरर',
     bootloaderUnlock: 'बूटलोडर अनलॉक',
-    kernelSource: 'कर्नेल स्रोत',
+    kernelSource: 'कर्नेल सोर्स',
     warrantyAfterUnlock: 'अनलॉक के बाद वारंटी',
     unlockMethod: 'अनलॉक विधि',
     notes: 'टिप्पणियां',
     lastUpdated: 'अंतिम अपडेट',
     officialPolicy: 'आधिकारिक नीति',
-    unlockWaitTime: 'अनलॉक करने के लिए इंतजार',
-    unlockQuota: 'अनलॉक क्वोटा',
-    simCardRequirement: 'एसआईएम कारण आवश्यकता',
-    accountLimit: 'खाता आवश्यकता',
+    unlockWaitTime: 'अनलॉक करने के लिए इंतजार का समय',
+    unlockQuota: 'अनलॉक कोटा',
+    simCardRequirement: 'सिम कार्ड की आवश्यकता',
+    accountLimit: 'खाते की सीमा',
     regionLimit: 'क्षेत्र सीमा',
-    relockSupport: 'रिलॉक समर्थन',
+    relockSupport: 'रिलॉक सहायता',
     
-    supported: 'समर्थित',
+    supported: 'सहयोग किया गया',
     limited: 'सीमित',
     unsupported: 'असमर्थित',
     unknown: 'अज्ञात',
     open: 'ओपन सोर्स',
     partial: 'आंशिक',
-    closed: 'बंद स्रोत',
+    closed: 'बंद रखा',
     maintained: 'बनाए रखा',
     voided: 'रद्द',
     
     viewDetails: 'विवरण देखें',
-    visitOfficial: 'आधिकारिक साइट पर जाएं',
+    visitOfficial: 'आधिकारिक वेबसाइट पर जाएं',
     
-    communityMaintained: 'समुदाय द्वारा रखरखाव',
+    communityMaintained: 'समुदाय द्वारा संचालित',
     contributorsWelcome: 'योगदानकर्ताओं का स्वागत',
-    lastDataUpdate: 'अंतिम डेटा अपडेट',
+    lastDataUpdate: 'अंतिम डेटा का अपडेट',
     
-    announcement: 'फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें',
+    announcement: 'फ्लैशिंग करना खतरनाक हो सकता है, कृपया फ्लैश करने से पहले अपने डेटा का बैकअप जरूर लें',
     
     aboutTitle: 'इस परियोजना के बारे में',
-    aboutDescription: 'यह परियोजना एंड्राइड उपयोगकर्ताओं को विभिन्न निर्माताओं के बूटलोडर अनलॉकिंग, कर्नेल स्रोत उपलब्धता और वारंटी नीतियों के प्रति दृष्टिकोण को समझने में मदद करती है।',
+    aboutDescription: 'यह परियोजना एंड्राइड उपयोगकर्ताओं को विभिन्न मैन्युफैक्चरर्स के बूटलोडर अनलॉकिंग, कर्नेल सोर्स उपलब्धता और वारंटी नीतियों के प्रति दृष्टिकोण को समझने में मदद करती है।',
     howToContribute: 'योगदान कैसे करें',
-    contributeDescription: 'आप डेटा अपडेट करने, त्रुटियों को ठीक करने या नई निर्माता जानकारी जोड़ने के लिए GitHub पर Pull Request सबमिट कर सकते हैं।',
+    contributeDescription: 'आप डेटा अपडेट करने, गलतियाँ सुधारने, या नए मैन्युफैक्चरर्स की जानकारी जोड़ने के लिए GitHub पर Pull Request भेज सकते हैं।',
     
     seo: {
       title: 'BL List',
-      description: 'निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना। फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें',
-      keywords: 'एंड्राइड, बूटलोडर, अनलॉक, कर्नेल, वारंटी, निर्माता, तुलना',
+      description: 'मैन्युफैक्चरर में बूटलोडर अनलॉक, कर्नेल सोर्स और वारंटी नीतियों की तुलना। फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें',
+      keywords: 'एंड्राइड, बूटलोडर, अनलॉक, कर्नेल, वारंटी, मैन्युफैक्चरर, तुलना',
       ogImage: 'https://a.zli.li/og-image.png',
       twitterCard: 'summary_large_image',
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "BL List",
-        "description": "निर्माताओं में बूटलोडर अनलॉक, कर्नेल स्रोत और वारंटी नीतियों की तुलना। फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें",
+        "description": "मैन्युफैक्चरर्स में बूटलोडर अनलॉक, कर्नेल सोर्स और वारंटी नीतियों की तुलना। फ्लैशिंग जोखिम भरा है। कृपया फ्लैश करने से पहले अपने डेटा का बैकअप लें",
         "url": "https://a.zli.li/"
       }
     }
   }
+
 };
