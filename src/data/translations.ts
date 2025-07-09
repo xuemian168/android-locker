@@ -56,6 +56,20 @@ export interface Translations {
   howToContribute: string;
   contributeDescription: string;
   
+  // External Link Warning
+  externalLinkWarning: {
+    title: string;
+    description: string;
+    urlLabel: string;
+    confirmButton: string;
+    cancelButton: string;
+    disclaimer: string;
+    showFullUrl: string;
+    hideFullUrl: string;
+    copyUrl: string;
+    urlCopied: string;
+  };
+  
   // SEO
   seo?: {
     title: string;
@@ -115,6 +129,19 @@ export const translations: Record<Language, Translations> = {
     aboutDescription: '这个项目旨在帮助Android用户了解不同手机厂商对于Bootloader解锁、内核开源和保修政策的态度。所有数据由社区收集和维护，欢迎大家贡献。',
     howToContribute: '如何贡献',
     contributeDescription: '您可以通过GitHub提交Pull Request来更新数据、修复错误或添加新的手机厂商信息。',
+    
+    externalLinkWarning: {
+      title: '外部链接提醒',
+      description: '您即将跳转到外部网站，该网站内容与本站无关。',
+      urlLabel: '目标网址：',
+      confirmButton: '确认跳转',
+      cancelButton: '取消',
+      disclaimer: '请确保您信任该网站后再继续。',
+      showFullUrl: '显示完整网址',
+      hideFullUrl: '收起网址',
+      copyUrl: '复制网址',
+      urlCopied: '网址已复制'
+    },
     
     seo: {
       title: 'BL List',
@@ -180,6 +207,19 @@ export const translations: Record<Language, Translations> = {
     howToContribute: 'How to Contribute',
     contributeDescription: 'You can contribute by submitting Pull Requests on GitHub to update data, fix errors, or add new manufacturer information.',
     
+    externalLinkWarning: {
+      title: 'External Link Warning',
+      description: 'You are about to visit an external website. The content of this site is not related to our site.',
+      urlLabel: 'Target URL:',
+      confirmButton: 'Continue',
+      cancelButton: 'Cancel',
+      disclaimer: 'Please ensure you trust this website before proceeding.',
+      showFullUrl: 'Show Full URL',
+      hideFullUrl: 'Hide URL',
+      copyUrl: 'Copy URL',
+      urlCopied: 'URL Copied'
+    },
+    
     seo: {
       title: 'BL List',
       description: 'Comparison of Bootloader unlock, kernel source, and warranty policies across manufacturers. Flashing is risky. Please back up your data before proceeding.',
@@ -243,6 +283,19 @@ export const translations: Record<Language, Translations> = {
     aboutDescription: 'यह परियोजना एंड्राइड उपयोगकर्ताओं को विभिन्न मैन्युफैक्चरर्स के बूटलोडर अनलॉकिंग, कर्नेल सोर्स उपलब्धता और वारंटी नीतियों के प्रति दृष्टिकोण को समझने में मदद करती है।',
     howToContribute: 'योगदान कैसे करें',
     contributeDescription: 'आप डेटा अपडेट करने, गलतियाँ सुधारने, या नए मैन्युफैक्चरर्स की जानकारी जोड़ने के लिए GitHub पर Pull Request भेज सकते हैं।',
+    
+    externalLinkWarning: {
+      title: 'बाहरी लिंक चेतावनी',
+      description: 'आप एक बाहरी वेबसाइट पर जाने वाले हैं। इस साइट की सामग्री हमारी साइट से संबंधित नहीं है।',
+      urlLabel: 'लक्ष्य URL:',
+      confirmButton: 'जारी रखें',
+      cancelButton: 'रद्द करें',
+      disclaimer: 'कृपया आगे बढ़ने से पहले सुनिश्चित करें कि आप इस वेबसाइट पर भरोसा करते हैं।',
+      showFullUrl: 'पूरा URL दिखाएं',
+      hideFullUrl: 'URL छुपाएं',
+      copyUrl: 'URL कॉपी करें',
+      urlCopied: 'URL कॉपी किया गया'
+    },
     
     seo: {
       title: 'BL List',

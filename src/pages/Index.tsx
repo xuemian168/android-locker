@@ -11,6 +11,7 @@ import { translations, Language } from '@/data/translations';
 import { Helmet } from 'react-helmet-async';
 import { useContentProtection } from '@/hooks/useContentProtection';
 import DynamicWatermark from '@/components/DynamicWatermark';
+import SafeExternalLink from '@/components/ExternalLink';
 import { useParams } from 'react-router-dom';
 
 interface IndexProps {
@@ -143,15 +144,14 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
                   asChild
                   className="bg-android-gradient hover:bg-android-gradient-dark transition-all duration-300"
                 >
-                  <a 
+                  <SafeExternalLink 
                     href="https://github.com/xuemian168/android-locker" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
                     className="flex items-center gap-2"
+                    translations={t}
                   >
                     <Github className="h-4 w-4" />
                     <span className="hidden sm:inline">{t.contribute}</span>
-                  </a>
+                  </SafeExternalLink>
                 </Button>
               </div>
             </div>
@@ -243,32 +243,30 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
                         variant="outline"
                         className="border-android-300 hover:bg-android-50"
                       >
-                        <a 
+                        <SafeExternalLink 
                           href="https://github.com/xuemian168/android-locker" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
                           className="flex items-center gap-2"
+                          translations={t}
                         >
                           <GitFork className="h-4 w-4" />
                           GitHub Repository
-                        </a>
+                        </SafeExternalLink>
                       </Button>
                     </div>
                   </div>
                   {/* 右侧二维码 */}
                   <div className="flex-shrink-0 flex flex-col items-center justify-center w-full md:w-auto">
-                    <a
+                    <SafeExternalLink
                       href="https://buymeacoffee.com/ictrun"
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="block"
+                      translations={t}
                     >
                       <img
                         src="/buymecoffee.png"
                         alt="Buy Me a Coffee QR"
                         className="w-40 h-40 object-contain rounded-lg border border-android-200 shadow-md bg-white"
                       />
-                    </a>
+                    </SafeExternalLink>
                     <span className="mt-2 text-sm text-muted-foreground">Buy Me a Coffee</span>
                   </div>
                 </div>
@@ -288,10 +286,10 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
                 {t.lastDataUpdate}: {new Date().toLocaleDateString()}
               </p> */}
               <p className="text-xs text-muted-foreground mt-2">
-                Powered by <a href="https://www.ict.run" target="_blank" rel="noopener noreferrer" className="underline hover:text-android-700">ict.run</a> @ {new Date().getFullYear()}
+                Powered by <SafeExternalLink href="https://www.ict.run" className="underline hover:text-android-700" translations={t}>ict.run</SafeExternalLink> @ {new Date().getFullYear()}
               </p>
               <p className="text-xs text-muted-foreground mt-1">
-                Refer: <a href="https://zli.li" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-700">zli.li - Domain Scanner</a> ,<a href="https://h.zli.li" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-700">Hangzhou-Lang</a>
+                Refer: <SafeExternalLink href="https://zli.li" className="underline hover:text-blue-700" translations={t}>zli.li - Domain Scanner</SafeExternalLink> ,<SafeExternalLink href="https://h.zli.li" className="underline hover:text-blue-700" translations={t}>Hangzhou-Lang</SafeExternalLink>
               </p>
             </div>
           </div>

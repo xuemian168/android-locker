@@ -6,6 +6,7 @@ import { ExternalLink, Calendar } from 'lucide-react';
 import { ManufacturerData, getStatusColor, getStatusIcon } from '@/data/manufacturers';
 import { Translations } from '@/data/translations';
 import ProtectedContent from './ProtectedContent';
+import SafeExternalLink from './ExternalLink';
 
 interface ManufacturerCardProps {
   manufacturer: ManufacturerData;
@@ -182,7 +183,13 @@ export const ManufacturerCard: React.FC<ManufacturerCardProps> = ({
               <ul className="mt-1 space-y-1">
                 {manufacturer.references.map((ref, idx) => (
                   <li key={ref.url + idx}>
-                    <a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-700 underline break-all">{ref.label}</a>
+                    <SafeExternalLink 
+                      href={ref.url} 
+                      className="text-xs text-blue-700 underline break-all"
+                      translations={translations}
+                    >
+                      {ref.label}
+                    </SafeExternalLink>
                   </li>
                 ))}
               </ul>
@@ -200,15 +207,14 @@ export const ManufacturerCard: React.FC<ManufacturerCardProps> = ({
               asChild
               className="hover:bg-android-50 border-android-200"
             >
-              <a 
+              <SafeExternalLink 
                 href={manufacturer.officialPolicy} 
-                target="_blank" 
-                rel="noopener noreferrer"
                 className="flex items-center gap-1"
+                translations={translations}
               >
                 <ExternalLink className="h-3 w-3" />
                 <span className="text-xs">{translations.visitOfficial}</span>
-              </a>
+              </SafeExternalLink>
             </Button>
           </div>
         </div>
