@@ -73,5 +73,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 ## Contributors
 
 - [@xuemian168](https://github.com/xuemian168) (Maintainer)
+- [@alikapadia9](https://github.com/alikapadia9) (Hindi Translator)
 
 <!-- Add your name or GitHub username here if you contribute! -->
