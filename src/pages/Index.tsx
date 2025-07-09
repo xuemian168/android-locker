@@ -9,6 +9,8 @@ import { StatsOverview } from '@/components/StatsOverview';
 import { manufacturersData } from '@/data/manufacturers';
 import { translations, Language } from '@/data/translations';
 import { Helmet } from 'react-helmet-async';
+import { useContentProtection } from '@/hooks/useContentProtection';
+import DynamicWatermark from '@/components/DynamicWatermark';
 import { useParams } from 'react-router-dom';
 
 interface IndexProps {
@@ -46,6 +48,15 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
 
   const [currentLanguage, setCurrentLanguage] = useState<Language>(initialLang);
 
+  // 启用内容保护
+  useContentProtection({
+    disableRightClick: true,
+    disableKeyboardShortcuts: true,
+    disableDevTools: true,
+    disablePrint: true,
+    showWarnings: false // 在生产环境中设为false以避免干扰用户
+  });
+
   // 切换语言时记忆到localStorage
   const handleLanguageChange = (lang: Language) => {
     setCurrentLanguage(lang);
@@ -72,6 +83,11 @@ const Index: React.FC<IndexProps> = ({ forcedLanguage }) => {
 
   return (
     <>
+      <DynamicWatermark 
+        text={`${t.title} - a.zli.li`}
+        enabled={true}
+        opacity={0.02}
+      />
       <Helmet>
         <html lang={currentLanguage} />
         <title>{seo.title}</title>

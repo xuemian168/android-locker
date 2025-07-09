@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, Calendar } from 'lucide-react';
 import { ManufacturerData, getStatusColor, getStatusIcon } from '@/data/manufacturers';
 import { Translations } from '@/data/translations';
+import ProtectedContent from './ProtectedContent';
 
 interface ManufacturerCardProps {
   manufacturer: ManufacturerData;
@@ -63,7 +64,12 @@ export const ManufacturerCard: React.FC<ManufacturerCardProps> = ({
           </span>
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <ProtectedContent
+        watermark={`${manufacturer.name} - a.zli.li`}
+        showWatermark={true}
+        className="content-protected"
+      >
+        <CardContent className="space-y-4">
         <div className="grid grid-cols-1 gap-3">
           <div className="flex items-center justify-between">
             <span className="text-sm font-medium text-muted-foreground">
@@ -207,6 +213,7 @@ export const ManufacturerCard: React.FC<ManufacturerCardProps> = ({
           </div>
         </div>
       </CardContent>
+      </ProtectedContent>
     </Card>
   );
 };

@@ -3,6 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 内容保护样式 */
+.content-protected {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.content-protected::selection {
+  background: none;
+}
+
+.content-protected::-moz-selection {
+  background: none;
+}
+
+/* 禁用图片拖拽 */
+.content-protected img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+/* 防止通过CSS选择器复制内容 */
+.content-protected * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
 @layer base {
