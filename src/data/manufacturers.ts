@@ -40,7 +40,7 @@ export const manufacturersData: ManufacturerData[] = [
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
     unlockMethod: {
-      zh: '小米社区App申请 + 官方解锁工具，需要完成实名认证和社区任务（HyperOS2需要社区答题，HyperOS1&MIUI可绕过该限制）\n *理论来说可以使用跑路法解锁，但是极为不推荐，该方法会让工作人员扣1000元的工资',
+      zh: '小米社区App申请 + 官方解锁工具，需要完成实名认证和社区任务',
       en: 'Official unlock tool + Community App with real-name authentication, community level, quiz, and 180 days registration',
       hi: 'आधिकारिक अनलॉक टूल + कम्युनिटी ऐप, असली नाम सत्यापन, कम्युनिटी लेवल, क्विज़, 180 दिन पुराना खाता'
     },
@@ -75,11 +75,11 @@ export const manufacturersData: ManufacturerData[] = [
       hi: 'समर्थित'
     },
     notes: {
-      zh: '⚠️ 风险提示：解锁将失去保修，部分功能可能异常。申请通过后需在14天内完成解锁，否则权限过期。建议解锁前充分了解刷机风险，做好数据备份。',
+      zh: '⚠️ 风险提示：解锁将失去保修，部分功能可能异常。申请通过后需在14天内完成解锁，否则权限过期。建议解锁前充分了解刷机风险，做好数据备份。（HyperOS2需要社区答题，HyperOS1&MIUI可绕过该限制） *理论来说可以使用跑路法解锁，但是极为不推荐，该方法会让工作人员扣1000元的工资）',
       en: 'CN models require application via Mi Community App, unlock permission valid for 14 days, warranty void after unlock, some models not supported, strict risk control, violating accounts permanently banned. SIM card required and binding, wait time starts from binding. Some models not open source or unusable.',
       hi: 'चीनी मॉडल के लिए Mi Community App से आवेदन आवश्यक, 14 दिन के लिए अनलॉक अनुमति, अनलॉक के बाद वारंटी समाप्त, कुछ मॉडल समर्थित नहीं, सख्त जोखिम नियंत्रण, उल्लंघन करने वाले खाते स्थायी रूप से प्रतिबंधित। सिम कार्ड आवश्यक, बाइंडिंग से प्रतीक्षा समय शुरू। कुछ मॉडल ओपन सोर्स नहीं हैं या उपयोग योग्य नहीं हैं।'
     },
-    lastUpdated: '2025-06-29',
+    lastUpdated: '2025-07-27',
     officialPolicy: 'https://www.miui.com/unlock/',
     references: [
       { url: 'https://github.com/melontini/bootloader-unlock-wall-of-shame', label: 'Wall of Shame' },
