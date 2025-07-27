@@ -36,11 +36,11 @@ export const manufacturersData: ManufacturerData[] = [
     id: 'xiaomi-cn',
     name: 'Xiaomi (CN)',
     logo: '/logos/xiaomi.png',
-    bootloaderUnlock: 'supported',
+    bootloaderUnlock: 'partial',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
     unlockMethod: {
-      zh: '小米社区App申请 + 官方解锁工具，需要完成实名认证和社区任务',
+      zh: '小米社区App申请 + 官方解锁工具，需要完成实名认证和社区任务（HyperOS2需要社区答题，HyperOS1&MIUI可绕过该限制）\n *理论来说可以使用跑路法解锁，但是极为不推荐，该方法会让工作人员扣1000元的工资',
       en: 'Official unlock tool + Community App with real-name authentication, community level, quiz, and 180 days registration',
       hi: 'आधिकारिक अनलॉक टूल + कम्युनिटी ऐप, असली नाम सत्यापन, कम्युनिटी लेवल, क्विज़, 180 दिन पुराना खाता'
     },
@@ -60,7 +60,7 @@ export const manufacturersData: ManufacturerData[] = [
       hi: 'आवश्यक'
     },
     accountLimit: {
-      zh: '需要：实名验证 + 社区5级 + 答题合格 + 账户满半年',
+      zh: '需要：实名验证 + 社区5级 + 答题通过 + 账户满半年',
       en: 'CN models require real-name authentication, community level 5, quiz passed, account registered for 180 days',
       hi: 'चीनी मॉडल के लिए असली नाम सत्यापन, कम्युनिटी लेवल 5, क्विज़ पास, 180 दिन पुराना खाता आवश्यक'
     },
