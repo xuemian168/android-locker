@@ -75,7 +75,7 @@ export const manufacturersData: ManufacturerData[] = [
       hi: 'समर्थित'
     },
     notes: {
-      zh: '⚠️ 风险提示：解锁将失去保修，部分功能可能异常。申请通过后需在14天内完成解锁，否则权限过期。建议解锁前充分了解刷机风险，做好数据备份。（HyperOS2需要社区答题，HyperOS1&MIUI可绕过该限制） *理论来说可以使用跑路法解锁，但是极为不推荐，该方法会让工作人员扣1000元的工资）',
+      zh: '⚠️ 风险提示：解锁将失去保修，部分功能可能异常。申请通过后需在14天内完成解锁，否则权限过期。建议解锁前充分了解刷机风险，做好数据备份。（HyperOS2需要社区答题，HyperOS1&MIUI理论可绕过该限制） *理论来说可以使用跑路法解锁，但是极为不推荐，该方法可能导致工作人员被扣1000元工资）',
       en: 'CN models require application via Mi Community App, unlock permission valid for 14 days, warranty void after unlock, some models not supported, strict risk control, violating accounts permanently banned. SIM card required and binding, wait time starts from binding. Some models not open source or unusable.',
       hi: 'चीनी मॉडल के लिए Mi Community App से आवेदन आवश्यक, 14 दिन के लिए अनलॉक अनुमति, अनलॉक के बाद वारंटी समाप्त, कुछ मॉडल समर्थित नहीं, सख्त जोखिम नियंत्रण, उल्लंघन करने वाले खाते स्थायी रूप से प्रतिबंधित। सिम कार्ड आवश्यक, बाइंडिंग से प्रतीक्षा समय शुरू। कुछ मॉडल ओपन सोर्स नहीं हैं या उपयोग योग्य नहीं हैं।'
     },
