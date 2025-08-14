@@ -36,7 +36,7 @@ export const manufacturersData: ManufacturerData[] = [
     id: 'xiaomi-cn',
     name: 'Xiaomi (CN)',
     logo: '/logos/xiaomi.png',
-    bootloaderUnlock: 'partial',
+    bootloaderUnlock: 'limited',
     kernelSource: 'open',
     warrantyAfterUnlock: 'voided',
     unlockMethod: {
@@ -178,23 +178,28 @@ export const manufacturersData: ManufacturerData[] = [
     id: 'oneplus',
     name: 'OnePlus',
     logo: '/logos/oneplus.png',
-    bootloaderUnlock: 'supported',
+    bootloaderUnlock: 'limited',
     kernelSource: 'open',
     warrantyAfterUnlock: 'maintained',
     unlockMethod: {
-      zh: 'Fastboot指令解锁',
-      en: 'Fastboot command',
-      hi: 'फास्टबूट कमांड'
+      zh: '旧设备：Fastboot指令解锁；新设备（ColorOS 16）：需申请深度测试名额',
+      en: 'Legacy devices: Fastboot command; New devices (ColorOS 16): Deep testing application required',
+      hi: 'पुराने डिवाइस: फास्टबूट कमांड; नए डिवाइस (ColorOS 16): गहरा जांच आवेदन आवश्यक'
     },
     unlockWaitTime: {
-      zh: '即时解锁',
-      en: 'None',
-      hi: 'अगर'
+      zh: '旧设备：即时解锁；新设备（ColorOS 16）：1-2个工作日',
+      en: 'Legacy devices: None; New devices (ColorOS 16): 1-2 business days',
+      hi: 'पुराने डिवाइस: कोई नहीं; नए डिवाइस (ColorOS 16): 1-2 कार्य दिवस'
+    },
+    unlockQuota: {
+      zh: '新设备需申请深度测试名额，配额有限，申请难度未知',
+      en: 'New devices require deep testing application with limited quota, difficulty unknown',
+      hi: 'नए डिवाइस को सीमित कोटा के साथ गहरा जांच आवेदन की आवश्यकता, कठिनाई अज्ञात'
     },
     simCardRequirement: {
-      zh: '无需插卡',
-      en: 'No need',
-      hi: 'आवश्यक नहीं'
+      zh: '新设备可能需要插卡（具体要求待确认）',
+      en: 'New devices may require SIM card (requirements TBD)',
+      hi: 'नए डिवाइस को सिम कार्ड की आवश्यकता हो सकती है (आवश्यकताएं TBD)'
     },
     relockSupport: {
       zh: '可重新上锁',
@@ -202,15 +207,16 @@ export const manufacturersData: ManufacturerData[] = [
       hi: 'समर्थित'
     },
     notes: {
-      zh: '🎉 最友好政策：无需申请码，无解锁限制，解锁后可正常保修。唯一影响：解锁期间部分安全功能暂停（重新上锁后恢复）。一加9及更早机型支持自定义证书，后续机型暂不支持。',
-      en: 'No unlock code required, no unlock restrictions. TEE function temporarily disabled after unlock, restored after relock (except SOTER key). OnePlus 9 and earlier models support custom trust root, while later models do not. \n After obtaining ROOT, if the phone can be restored after flashing (download the upgrade tool from the official website and flash it yourself or ask the official service center to help you), you can enjoy normal warranty service; if the phone cannot be restored after flashing, you can only enjoy warranty service, not return and exchange service.',
-      hi: 'अनलॉक कोड की आवश्यकता नहीं, कोई अनलॉक सीमा नहीं। अनलॉक के बाद TEE कार्य अल्पकालिक रूप से अक्षम हो जाता है, वापसी के बाद पुनर्स्थापित हो जाता है (SOTER कुंजी को छोड़कर)। एक प्लस 9 और पूर्व मॉडल स्वतंत्र विश्वास जड़ का समर्थन करते हैं, जबकि बाद के मॉडल समर्थित नहीं हैं। \n फोन उपयोगकर्ता को अनलॉक करने के बाद यदि फ़ोन को फ़्लश करके फिर से प्रणाली को पुनर्स्थापित किया जा सकता है (ऑफिसियल वेबसाइट से अपग्रेड टूल डाउनलोड करें और आप स्वयं फ़्लश करें या ऑफिसि यल सेवा केंद्र से मदद लें), तो सामान्य वारंटी सेवा का आनंद ले सकते हैं; यदि फ़्लश करने के बाद फ़ोन को पुनर्स्थापित नहीं किया जा सकता है, तो केवल वारंटी सेवा का आनंद ले सकते हैं, वापसी और विनिमय सेवा लागू नहीं होती।'
+      zh: '⚠️ 政策变化：旧设备仍保持友好的解锁政策，无需申请码。但搭载ColorOS 16的新设备将收紧政策，需要申请深度测试名额，等待时长1-2个工作日，申请难度未知，未来可能会像OPPO、小米一样解锁困难。解锁后部分安全功能暂停，重新上锁后恢复。一加9及更早机型支持自定义证书。',
+      en: '⚠️ Policy Change: Legacy devices maintain friendly unlock policy with no unlock code required. However, new devices with ColorOS 16 will have tightened policies requiring deep testing applications, 1-2 business day wait times, unknown application difficulty. Future unlock may become as difficult as OPPO/Xiaomi. TEE functions temporarily disabled after unlock, restored after relock. OnePlus 9 and earlier support custom trust root.',
+      hi: '⚠️ नीति परिवर्तन: पुराने डिवाइस अनुकूल अनलॉक नीति बनाए रखते हैं, अनलॉक कोड की आवश्यकता नहीं। हालांकि, ColorOS 16 वाले नए डिवाइस में सख्त नीतियां होंगी जिनमें गहरा जांच आवेदन, 1-2 कार्य दिवस प्रतीक्षा समय, अज्ञात आवेदन कठिनाई शामिल है। भविष्य में अनलॉक OPPO/Xiaomi जितना कठिन हो सकता है। अनलॉक के बाद TEE कार्य अस्थायी रूप से अक्षम, पुनर्लॉक के बाद बहाल। OnePlus 9 और पुराने कस्टम ट्रस्ट रूट का समर्थन करते हैं।'
     },
-    lastUpdated: '2025-06-25',
+    lastUpdated: '2025-08-14',
     officialPolicy: 'https://www.oneplus.com/support',
     references: [
       { url: 'https://android.fandom.com/wiki/Bootloader_unlocking', label: 'Android Wiki' },
-      { url: 'https://github.com/melontini/bootloader-unlock-wall-of-shame', label: 'Wall of Shame' }
+      { url: 'https://github.com/melontini/bootloader-unlock-wall-of-shame', label: 'Wall of Shame' },
+      { url: 'https://bbs.oneplus.com/thread/1926504022886318086', label: 'OnePlus Official Policy Update - ColorOS 16 Bootloader Unlock Changes' }
     ]
   },
   {
