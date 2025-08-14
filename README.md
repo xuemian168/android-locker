@@ -3,7 +3,6 @@
 ![Forks](https://img.shields.io/github/forks/xuemian168/android-locker?style=for-the-badge)
 ![Issues](https://img.shields.io/github/issues/xuemian168/android-locker?style=for-the-badge)
 ![Pull Requests](https://img.shields.io/github/issues-pr/xuemian168/android-locker?style=for-the-badge)
-![License](https://img.shields.io/github/license/xuemian168/android-locker?style=for-the-badge)
 ![Last Commit](https://img.shields.io/github/last-commit/xuemian168/android-locker?style=for-the-badge)
 ![Build](https://github.com/xuemian168/android-locker/actions/workflows/deploy.yml/badge.svg?style=for-the-badge)
 
@@ -68,11 +67,13 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 3. Other Reference Shows on webiste
 
 ## License
-[MIT](./LICENSE)
+[Attribution-NonCommercial-ShareAlike 4.0 International](./LICENSE)
 
 ## Contributors
 
 - [@xuemian168](https://github.com/xuemian168) (Maintainer)
 - [@alikapadia9](https://github.com/alikapadia9) (Hindi Translator)
+- [@sensen1234](https://github.com/sensen1234) (Contributor)
+- [@my-name-is-not-available](https://github.com/my-name-is-not-available) (Contributor)
 
 <!-- Add your name or GitHub username here if you contribute! -->
